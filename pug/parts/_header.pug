@@ -17,8 +17,10 @@ section.header
 section.menu
     div.wrap
         ul
-            li: a(href="index.html") Главная
-            li.has-child: a(href="categories.html") Направления
+            li
+                a(href="index.html") Главная
+            li.has-child
+                a(href="categories.html") Направления
                 ul
                     li: a(href="category.html") Парикмахерское исскуство
                     li: a(href="category.html") Маникюр
@@ -30,7 +32,8 @@ section.menu
                     li: a(href="category.html") Ресницы
                     li: a(href="category.html") Брови
                     li: a(href="category.html") Татуаж
-            li.has-child: a(href="text.html") Академия
+            li.has-child
+                a(href="text.html") Академия
                 ul
                     li: a(href="text.html") Об академии
                     li: a(href="teachers.html") Преподователи
@@ -41,7 +44,8 @@ section.menu
                     li: a(href="articles.html") Статьи
                     li: a(href="jobs.html") Биржа труда
                     li: a(href="https://shop-mskr.ru") Интернет магазин
-            li: a(href="contacts.html") Контакты
+            li
+                a(href="contacts.html") Контакты
             li.online
                 a(href="https://mskr-online.ru", target="_blanc")
                     include ../../images/online.svg
