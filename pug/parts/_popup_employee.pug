@@ -1,0 +1,26 @@
+section(modal="employee")
+    include ../../images/cross.svg
+    div(style="background-image: url('./images/employee.webp')").preview
+    div.content
+        h2 Разместить вакансию
+        form(action="send_mail.html")
+            input(type="hidden", name="Форма", value="Ищу сотрудника")
+            div.input
+                input(name="Название салона", type="text", placeholder=" ", minlength="3", required)
+                label(for="Название салона") Название салона
+            div.input
+                input(name="Адрес", type="text", placeholder=" ", required)
+                label(for="Адрес") Адрес салона
+            div.input
+                input(name="ФИО", type="text", placeholder=" ", required)
+                label(for="ФИО") Контактное лицо
+            div.input
+                input(name="Телефон", type="text", placeholder=" ", required)
+                label(for="Телефон") Телефон
+            div.textarea
+                textarea(name="Описание", rows="1", placeholder=" ", minlength="20", required)
+                label(for="Описание") Описание вакансии
+            span.personal
+                span Нажимая на кнопку, вы даете согласие на обработку своих
+                a(href="###") персональных данных
+            input(type="submit", value="Отправить")

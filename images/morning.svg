@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="23.078" height="22.078" viewBox="0 0 23.078 22.078">
+  <g id="morning" transform="translate(-1166 -1830.922)">
+    <g id="Контур_19" data-name="Контур 19" transform="translate(1172 1837.5)" fill="none">
+      <path d="M5.5,0A5.5,5.5,0,0,1,11,5.5H0A5.5,5.5,0,0,1,5.5,0Z" stroke="none"/>
+      <path d="M 5.5 1 C 3.362323760986328 1 1.567971229553223 2.498424530029297 1.111983299255371 4.5 L 9.888016700744629 4.5 C 9.432029724121094 2.498424530029297 7.637676239013672 1 5.5 1 M 5.5 0 C 8.537569999694824 0 11 2.462430000305176 11 5.5 C 7.61808967590332 5.5 2.669759750366211 5.5 0 5.5 C 0 2.462430000305176 2.462430000305176 0 5.5 0 Z" stroke="none" fill="#e51026"/>
+    </g>
+    <line id="Линия_33" data-name="Линия 33" y2="3.066" transform="translate(1177.539 1831.422)" fill="none" stroke="#e51026" stroke-linecap="round" stroke-width="1"/>
+    <line id="Линия_35" data-name="Линия 35" y2="3.066" transform="translate(1188.578 1842.461) rotate(90)" fill="none" stroke="#e51026" stroke-linecap="round" stroke-width="1"/>
+    <line id="Линия_36" data-name="Линия 36" y2="3.066" transform="translate(1169.566 1842.461) rotate(90)" fill="none" stroke="#e51026" stroke-linecap="round" stroke-width="1"/>
+    <line id="Линия_38" data-name="Линия 38" y2="3.066" transform="translate(1171.901 1836.824) rotate(135)" fill="none" stroke="#e51026" stroke-linecap="round" stroke-width="1"/>
+    <line id="Линия_40" data-name="Линия 40" y2="3.066" transform="translate(1183.176 1836.824) rotate(-135)" fill="none" stroke="#e51026" stroke-linecap="round" stroke-width="1"/>
+    <line id="Линия_41" data-name="Линия 41" x2="22" transform="translate(1166.5 1847.5)" fill="none" stroke="#e51026" stroke-linecap="round" stroke-width="1"/>
+    <line id="Линия_42" data-name="Линия 42" x2="10" transform="translate(1172.5 1852.5)" fill="none" stroke="#e51026" stroke-linecap="round" stroke-width="1"/>
+  </g>
+</svg>

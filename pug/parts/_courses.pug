@@ -1,0 +1,26 @@
+section.courses
+    div.wrap
+
+        div.header
+            h2 Последние курсы
+            a(href="categories.html").link
+                span Все курсы
+                include ../../images/right_arrow.svg
+
+        div(class="carousel_wrap")
+            include ../../images/gallery_left.svg
+            div.list.carousel
+                -for( i=1; i<=12 ; i++ )
+                    a(href="course.html").card.linked
+                        div(style="background-image: url('images/courses/course_" + i + ".webp')").preview
+                        div.content
+                            div.complexity.hard
+                                div
+                                div
+                                div
+                                span Продвинутый
+                            strong Парикмахер – универсал
+                            p Обучись искусству создания причесок, которые ты сможешь повторять самостоятельно
+                            span.price от 48 000 руб.
+
+            include ../../images/gallery_right.svg

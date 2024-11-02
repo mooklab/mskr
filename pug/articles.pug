@@ -1,0 +1,24 @@
+include parts/_head.pug
+include parts/_header.pug
+
+section.breadcrumbs
+    div.wrap
+        ul
+            li: a(href="index.html") Главная
+            li: a(href="categories.html") Академия
+            li: span Статьи
+
+section.page.articles
+    div.wrap
+        div.header
+            h2 Последние новости / статьи
+        div.list
+            -for( i=1; i<=12 ; i++ )
+                a(href="text.html").card.linked
+                    div(style="background-image: url('images/courses/course_" + i + ".webp')").preview
+                    div.content
+                        strong Может ли средний медицинский персонал проводить инъекции?
+                        p Один из самых волнующих вопросов специалистов со средним медицинским образование, могу ли я «колоть» Данный вопрос регламентирует Приказ Министерства здравоохранения…
+                        span(href="text.html") Читать полностью
+
+include parts/_footer.pug

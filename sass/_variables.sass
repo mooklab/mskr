@@ -1,0 +1,48 @@
+\:root
+    --twelve-padding: 12rem
+    --eight-padding: 8rem
+    --six-padding: 6rem
+    --four-padding: 4rem
+    --three-padding: 3rem
+    --two-padding: 2rem
+    --one-padding: 1rem
+
+@media (max-width: 1280px)
+    \:root
+        --section-padding: 10rem
+        --eight-padding: 7.5rem
+        --six-padding: 5rem
+        --four-padding: 3.5rem
+
+@media (max-width: 960px)
+    \:root
+        --section-padding: 8rem
+        --eight-padding: 6.5rem
+        --six-padding: 4rem
+        --four-padding: 3rem
+        --three-padding: 2rem
+        --two-padding: 1.5rem
+        --one-padding: .8rem
+
+@media (max-width: 640px)
+    \:root
+        --twelve-padding: 6rem
+        --eight-padding: 5.5rem
+        --six-padding: 3rem
+        --four-padding: 2.5rem
+
+
+=grid($cols, $gutter)
+    display: flex
+    flex-wrap: wrap
+    margin: calc($gutter / -2)
+    & > *
+        box-sizing: border-box
+        flex-basis: calc( (100% / #{$cols}) - #{$gutter} )
+        margin: calc($gutter / 2) calc($gutter / 2)
+    
+    
+$dark: #2a3038
+$accent: #e51026
+$background: #DE3244
+$light: #f4f4f4

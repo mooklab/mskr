@@ -1,0 +1,557 @@
+@media (max-width: 1280px)
+    html, body
+        font-size: 15px
+
+    h1
+        font-size: 3.25rem
+        line-height: 1.2
+
+    h2
+        font-size: 2.1rem
+        line-height: 1.4
+
+    h3
+        font-size: 1.65rem
+        line-height: 1.4
+
+    section.header
+        .wrap
+            padding-top: 0
+            padding-bottom: 0
+            .logotype
+                position: static
+                transform: none
+                margin: var(--one-padding) 0
+                width: 140px
+                height: 54px
+            .adress
+                display: none
+
+    section.about
+        .images
+            height: calc(100% + 150px)
+            margin-bottom: -150px
+            .brush
+                width: 120px
+                bottom: 150px
+                left: 50%
+                margin-left: 100px
+            .cream
+                width: 200px
+                bottom: 500px
+                right: -150px
+            .leaf
+                width: 250px
+                bottom: 150px
+                left: 50px
+                transform: scaleX(-1)
+            .leaf_full
+                width: 300px
+                bottom: 0px
+                right: -150px
+                z-index: 1
+                transform: rotate(90deg)
+            .lipstick
+                width: 200px
+                bottom: 150px
+                left: 50%
+                margin-left: -200px
+            .scissors
+                width: 300px
+                left: -150px
+                bottom: 450px
+                transform: rotate(-60deg)
+            .circle
+                position: absolute
+                bottom: 150px
+                left: 50%
+                transform: translateX(-50%)
+        .content
+            i
+                font-size: 1.95rem
+        .advantages
+            li
+                strong
+                    font-size: 3.5rem
+        
+    section.banner
+        .wrap
+            .image
+                flex-basis: 50%
+            .content
+                flex-basis: 50%
+
+    section.footer
+        .wrap
+            & > *
+                flex-basis: 50%
+            .directions
+                order: 1
+            .about
+                order: 2
+            .phones
+                order: 3
+            .adress
+                order: 4
+            .description
+                order: 5
+                flex-basis: 100%
+                padding-right: 0
+                span
+                    padding-top: 0
+                .logotype
+                    display: none
+            .copyright
+                order: 6
+                flex-basis: 100%
+                padding-right: 0
+
+    section.page.courses
+        .list
+            +grid(3, 2rem)
+
+    section.course_about
+        .program
+            flex-basis: 60%
+        .order
+            flex-basis: 40%
+
+@media (max-width: 960px)
+
+    h1
+        font-size: 2.75rem
+        line-height: 1.2
+
+    h2
+        font-size: 1.95rem
+        line-height: 1.4
+
+    h3
+        font-size: 1.45rem
+        line-height: 1.5
+
+    section.header
+        .wrap
+            .phones
+                display: none
+            .mobile
+                display: block
+
+    section.menu
+        display: none
+
+    section.banner
+        .wrap
+            height: auto
+            flex-direction: column
+            .image
+                height: auto
+                flex-basis: 50%
+                order: 2
+                max-width: 400px
+                img
+                    width: auto
+                    width: 100%
+            .content
+                text-align: center
+                flex-basis: 100%
+                order: 1
+                margin-bottom: var(--four-padding)
+            &::before
+                content: ''
+                position: absolute
+                top: 0
+                left: 0
+                height: 100%
+                width: 100%
+                background-color: $background
+            &::after
+                content: ''
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                height: calc( 100% - 200px )
+                background-color: $dark
+
+    section.directions
+        .wrap
+            h2
+                margin-bottom: var(--two-padding)
+            flex-direction: column
+            ul
+                li
+                    margin-right: var(--two-padding)
+                    a
+                        font-size: 1.4rem
+                        line-height: 1.5
+
+    section.about
+        .images
+            .leaf
+                width: 250px
+                bottom: 150px
+                left: 0px
+                transform: scaleX(-1)
+            .lipstick
+                width: 200px
+                bottom: 150px
+                left: 50%
+                margin-left: -150px
+        .advantages
+            flex-wrap: wrap
+            li
+                flex-basis: 50%
+
+    section.reviews
+        .content
+            flex-direction: column
+            .form
+                border-left: 0
+                padding-left: 0
+                margin-left: 0
+                border-top: 1px solid rgba(0,0,0,0.1)
+                padding-top: var(--four-padding)
+                margin-top: var(--four-padding)
+                max-width: 100%
+                display: flex
+                flex-direction: column
+                align-items: center
+                form
+                    input
+                        margin: 0 auto
+
+    section.question
+        .wrap
+            .image
+                display: none
+            .form
+                flex-basis: 100%
+
+    section.footer
+        .wrap
+            & > *
+                flex-basis: 50%
+            .directions
+                order: 1
+            .about
+                order: 2
+            .phones
+                flex-basis: 100%
+                order: 3
+            .adress
+                order: 4
+
+    section.page.courses
+        .list
+            +grid(2, 2rem)
+
+    section.course_about
+        .tabs_caption
+            font-size: 1.2rem
+        .program_details
+            flex-direction: column
+        .order
+            display: flex
+            flex-direction: column
+            align-items: center
+            text-align: center
+            border-left: none
+            padding-left: 0
+            margin-left: 0
+            border-top: 1px solid rgba(0,0,0,0.1)
+            padding-top: var(--four-padding)
+            margin-top: var(--four-padding)
+            .buttons
+                justify-content: center
+
+    section.page.teachers
+        .list
+            .card
+                .preview
+                    margin-left: 0
+                    width: 140px
+                    height: 140px
+
+    section.page.articles
+        .list
+            +grid(2, 2rem)
+
+    section.contacts
+        .wrap
+            .content
+                .form
+                    .merge
+                        flex-direction: column
+
+    section.course_advantages
+        ul
+            flex-wrap: wrap
+            li
+                flex-basis: 50%
+                margin-bottom: var(--two-padding)
+
+    [modal=order]
+        .preview
+            flex-basis: 40%
+        .content
+            flex-basis: 60%
+
+@media (max-width: 800px)
+    
+    section.footer
+        .wrap
+            & > *
+                flex-basis: 100%
+
+@media (max-width: 640px)
+    
+    html, body
+        font-size: 14px
+        
+    h1
+        font-size: 2.25rem
+        line-height: 1.4
+
+    h2
+        font-size: 1.75rem
+        line-height: 1.4
+
+    h3
+        font-size: 1.25rem
+        line-height: 1.5
+
+    strong
+        font-size: 1.2rem
+
+    section
+        .wrap
+            padding-left: var(--three-padding)
+            padding-right: var(--three-padding)
+
+    section.faq
+        .list
+            .item
+                .question
+                    .mark
+                        margin-top: 10px
+
+    section.about
+        .images
+            height: calc(100% + 150px)
+            margin-bottom: -100px
+            .brush
+                width: 80px
+                bottom: 100px
+                left: 50%
+                margin-left: 50px
+            .cream
+                width: 200px
+                bottom: 350px
+                right: -150px
+            .leaf
+                width: 250px
+                bottom: 100px
+                left: -100px
+                transform: scaleX(-1)
+            .leaf_full
+                width: 200px
+                bottom: 0px
+                right: -100px
+                z-index: 1
+                transform: rotate(90deg)
+            .lipstick
+                width: 150px
+                bottom: 100px
+                left: 50%
+                margin-left: -150px
+            .scissors
+                width: 300px
+                left: -150px
+                bottom: 300px
+                transform: rotate(-60deg)
+            .circle
+                bottom: 100px
+        .content
+            i
+                font-size: 1.65rem
+        .advantages
+            li
+                strong
+                    font-size: 2.2rem
+                span
+                    font-size: 1rem
+
+    section.reviews
+        .content
+            .list
+                +grid(1, 3rem)
+
+    section.question
+        .wrap
+            .form
+                .merge
+                    flex-direction: column
+
+    section.footer
+        .wrap
+            .directions, .about
+                ul
+                    li
+                        padding-right: var(--one-padding)
+
+    section.breadcrumbs,
+    div.breadcrumbs
+        ul li 
+            span
+                font-size: .95rem
+            a
+                margin-right: 1rem
+                font-size: .95rem
+                &::after
+                    width: 24px
+                    margin-left: 1rem
+
+    section.page.courses
+        .sort
+            flex-wrap: wrap
+        .list
+            +grid(1, 2rem)
+
+    section.course_banner
+        .wrap
+            .content
+                p
+                    font-size: 1rem
+
+    section.course_about
+        .tabs_caption
+            font-size: 1.1rem
+            display: flex
+            flex-direction: column
+            a
+                padding: var(--one-padding) 0
+            & > *:not(:last-child)
+                margin-right: 0
+        .program
+            .list
+                .item
+                    &::before
+                        font-size: 1.2rem
+                    .block
+                        padding-left: var(--two-padding)
+                        strong
+                            font-size: 1.2rem
+        .order
+            .price
+                font-size: 2.6rem
+            i
+                font-size: 1.2rem
+            .complexity, .time, .schedule
+                margin-bottom: var(--three-padding)
+                strong
+                    font-size: 1.5rem
+                    padding: .3rem 0 .4rem
+
+    section.page.teachers
+        .list
+            .card
+                flex-direction: column
+                align-items: center
+
+    section.page.reviews
+        .list
+            column-count: 1
+
+    section.page.articles
+        .list
+            +grid(1, 2rem)
+
+    section.contacts
+        .wrap
+            .content
+                flex-direction: column
+                .form
+                    margin-top: var(--six-padding)
+
+    section.course_advantages
+        ul
+            flex-wrap: wrap
+            li
+                display: flex
+                flex-basis: 100%
+                margin-bottom: 0
+                &:not(:last-child)
+                    margin-bottom: var(--two-padding)
+                svg
+                    max-width: 40px
+                    max-height: 40px
+                    flex-shrink: 0
+                    margin-right: var(--one-padding)
+
+    section.course_documents
+        .wrap
+            flex-direction: column
+            .content
+                order: 2
+                flex-basis: 100%
+                margin-right: 0
+                margin-top: var(--four-padding)
+            .image
+                order: 1
+
+    [modal=order], [modal=work], [modal=employee]
+        flex-direction: column
+
+@media (max-width: 380px)
+    
+    section.about
+        .images
+            height: calc(100% + 150px)
+            margin-bottom: -100px
+            .brush
+                width: 60px
+                bottom: 100px
+                left: 50%
+                margin-left: 50px
+            .cream
+                display: none
+            .leaf
+                width: 200px
+                bottom: 100px
+                left: -120px
+                transform: scaleX(-1)
+            .leaf_full
+                width: 200px
+                bottom: 0px
+                right: -150px
+                z-index: 1
+                transform: rotate(90deg)
+            .lipstick
+                width: 150px
+                bottom: 100px
+                left: 50%
+                margin-left: -100px
+            .scissors
+                display: none
+    
+    section.footer
+        .wrap
+            .phones
+                flex-direction: column
+                a:first-child
+                    padding-bottom: .5rem
+
+    section.page.teachers
+        .list
+            .card
+                .merge
+                    flex-direction: column
+                    & > *:not(:last-child)
+                        margin-bottom: var(--one-padding)
+
+    [modal=teacher]
+        .merge
+            flex-direction: column
+            & > *:not(:last-child)
+                margin-bottom: var(--one-padding)

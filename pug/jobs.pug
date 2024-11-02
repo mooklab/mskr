@@ -1,0 +1,28 @@
+include parts/_head.pug
+include parts/_header.pug
+ 
+section.breadcrumbs
+    div.wrap
+        ul
+            li: a(href="index.html") Главная
+            li: a(href="text.html") Академия
+            li: span Биржа труда
+            
+section.page.jobs
+    div.wrap
+        h1 Вакансии надёжных работодателей и резюме талантливых мастеров
+        p Помогаем специалистам и салонам красоты найти друг друга и сделать бьюти-мир еще прекраснее!
+        div.list
+            div.work
+                div(style="background-image: url(images/work.webp)").preview
+                p Лучшие салоны красоты России ждут выпускников академии «Мастерская Красоты»
+                a(target-modal="work").button Ищу работу
+            div.employee
+                div(style="background-image: url(images/employee.webp)").preview
+                p Лучшие специалисты бьюти-индустрии готовы вывести ваш бизнес на новый уровень
+                a(target-modal="employee").button Ищу сотрудника
+
+
+include parts/_popup_work.pug
+include parts/_popup_employee.pug
+include parts/_footer.pug

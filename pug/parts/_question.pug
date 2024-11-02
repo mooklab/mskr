@@ -1,0 +1,22 @@
+section.question
+    div.wrap
+        div.image
+            img(src="images/question.webp")
+        div.form
+            h2 Остались вопросы?
+            form(action="send_mail.html")
+                input(type="hidden", name="Форма", value="Остались вопросы")
+                div.merge
+                    div.input
+                        input(name="Имя", type="text", placeholder=" ", minlength="3", required)
+                        label(for="Имя") Введите ваше Имя
+                    div.input
+                        input(name="Почта", type="email", placeholder=" ", required)
+                        label(for="Почта") Введите ваше email
+                div.textarea
+                    textarea(name="Вопрос", rows="1", placeholder=" ", minlength="20", required)
+                    label(for="Вопрос") Ваш вопрос
+                span.personal
+                    span Нажимая на кнопку, вы даете согласие на обработку своих
+                    a(href="###") персональных данных
+                input(type="submit", value="Задать вопрос")

@@ -1,0 +1,32 @@
+include parts/_head.pug
+include parts/_header.pug
+
+section.breadcrumbs
+    div.wrap
+        ul
+            li: a(href="index.html") Главная
+            li: a(href="text.html") Академия
+            li: span Преподаватели академии
+
+section.page.teachers
+    div.wrap
+        div.header
+            h2 Преподаватели академии
+        div.list
+            -for( i=1; i<=12 ; i++ )
+                div.card
+                    div(style="background-image: url('images/team.webp')").preview
+                    div.content
+                        span Специалист по массажу
+                        strong Дорохова Елена Николаевна
+                        p Многократный участник международных семинаров по парикмахерскому искусству. Призер Чемпионата России по парикмахерскому искусству, маникюру и декоративной косметике -2014 год в номинации «Прогрессивный образ женщины». Член жюри внутреннего конкурса среди учащихся и выпускников УЦ «Мастерская красоты».
+                        div.merge
+                            div
+                                span  Опыт работы:
+                                strong 8 лет
+                            div
+                                span  Место работы:
+                                strong Технолог компании Matrix
+
+
+include parts/_footer.pug

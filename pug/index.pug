@@ -1,0 +1,52 @@
+include parts/_head.pug
+include parts/_header.pug
+
+section.banner
+    div(style="background-image: url(images/background.webp)").preview
+    div.wrap
+        div.image
+            img(src="images/banner.webp")
+        div.content
+            i «Мастерская красоты»
+            h1 Федеральная сеть учебных заведений
+            p “Мастерская красоты” – это группа компаний, комплексно обслуживающая сферу индустрии красоты.
+
+include parts/_directions.pug
+include parts/_courses.pug
+
+section.about
+    div.images
+        include ../images/circle.svg
+        img(src="images/brush.webp").brush
+        img(src="images/lipstick.webp").lipstick
+        img(src="images/cream.webp").cream
+        img(src="images/leaf.webp").leaf
+        img(class="leaf_full", src="images/leaf_full.webp")
+        img(src="images/scissors.webp").scissors
+    div.content
+        i Об академии
+        h1 Федеральная сеть учебных заведений «Мастерская красоты»
+        p “Мастерская красоты” – это группа компаний, комплексно обслуживающая сферу индустрии красоты. Мы работаем по направлениям: учебный центр – комплексное образование по всем направлениям индустрии красоты: парикмахерское искусство, ногтевой сервис, визаж, массаж, косметология;
+        div(target-modal="video").play
+            include ../images/play.svg
+            span Смотреть видео
+    ul.advantages
+        li
+            strong 168
+            span дипломов выдано в 2021 году
+        li
+            strong 60 000
+            span средний доход нашего выпускника
+        li
+            strong 120
+            span курсов различных направлений
+        li
+            strong 2013
+            span Занимаемся обучение более 8 лет
+
+include parts/_reviews.pug
+include parts/_teachers.pug
+include parts/_faq.pug
+include parts/_question.pug
+include parts/_footer.pug
+include parts/_popup_video.pug

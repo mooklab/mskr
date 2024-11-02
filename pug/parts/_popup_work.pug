@@ -1,0 +1,23 @@
+section(modal="work")
+    include ../../images/cross.svg
+    div(style="background-image: url('./images/work.webp')").preview
+    div.content
+        h2 Разместить резюме
+        form(action="send_mail.html")
+            input(type="hidden", name="Форма", value="Ищу работу")
+            div.input
+                input(name="Специальность", type="text", placeholder=" ", minlength="3", required)
+                label(for="Специальность") Специальность
+            div.input
+                input(name="Год окончания", type="text", placeholder=" ", required)
+                label(for="Год окончания") Год окончания обучения
+            div.input
+                input(name="Телефон", type="text", placeholder=" ", required)
+                label(for="Телефон") Введите ваш телефон
+            div.textarea
+                textarea(name="О себе", rows="1", placeholder=" ", minlength="20", required)
+                label(for="О себе") О себе
+            span.personal
+                span Нажимая на кнопку, вы даете согласие на обработку своих
+                a(href="###") персональных данных
+            input(type="submit", value="Отправить")

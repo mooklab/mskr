@@ -1,0 +1,56 @@
+include parts/_head.pug
+include parts/_header.pug
+
+section.breadcrumbs
+    div.wrap
+        ul
+            li: a(href="index.html") Главная
+            li: span Контакты
+
+section.page.contacts
+    div.wrap
+        h1 Контактная информация
+        div.content
+            div.contact
+                div.phone
+                    span Запись на обучение
+                    a(href="tel:8 (928) 226-43-29")
+                        strong 8 (928) 226-43-29
+                div.phone
+                    span Наш офис
+                    a(href="tel:8 (928) 226-43-45")
+                        strong 8 (928) 226-43-45
+                div.email
+                    span E-mail
+                    a(href="mailto:moook.email@gmail.com")
+                        strong moook.email@gmail.com
+                span.note Академия «Мастерская Красоты» в Ростове-на-Дону, находится исключительно на ул. Пушкинская, 25/67. Остерегайтесь мошенников!
+                div.adress
+                    include ../images/pin.svg
+                    div
+                        strong г. Ростов-на-Дону, ул. Пушкинская, 25/67
+                        span График работы: c 10:00 до 18:00
+            div.form
+                h2 Написать нам
+                form(action="send_mail.html")
+                    input(type="hidden", name="Форма", value="Написать нам")
+                    div.merge
+                        div.input
+                            input(name="Имя", type="text", placeholder=" ", minlength="3", required)
+                            label(for="Имя") Введите ваше Имя
+                        div.input
+                            input(name="Почта", type="email", placeholder=" ", required)
+                            label(for="Почта") Введите ваше email
+                    div.textarea
+                        textarea(name="Сообщение", rows="1", placeholder=" ", minlength="20", required)
+                        label(for="Сообщение") Ваше сообщение
+                    span.personal
+                        span Нажимая на кнопку, вы даете согласие на обработку своих
+                        a(href="###") персональных данных
+                    input(type="submit", value="Задать вопрос")
+                    
+section#map.map
+    script(defer, src="https://api-maps.yandex.ru/2.1/?lang=ru-RU", type="text/javascript")
+    script(defer, src="scripts/map.js")
+
+include parts/_footer.pug

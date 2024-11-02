@@ -1,0 +1,186 @@
+include parts/_head.pug
+include parts/_header.pug
+ 
+section(class="course_banner")
+    div(style="background-image: url('images/background.webp')").preview
+
+    div.wrap
+        div.breadcrumbs
+            ul
+                li: a(href="index.html") Главная
+                li: a(href="categories.html") Направления
+                li: span Парикмахерское искусство
+        div.content
+            i Парикмахерское искусство
+            h1 Парикмахер – универсал
+            p Но в современном обществе, когда каждый человек стремится выглядеть привлекательно, её востребованность высока как никогда. Парикмахерские услуги необходимы каждому. Для того, чтобы удовлетворить желания любого клиента, предлагаем пройти обучение в нашем Учебном центре!
+            a(target-modal="order").button Записаться
+
+section(class="course_about")
+
+    div(class="tabs_caption")
+        a(href="###").active Экспресс курс
+        a(href="###") Базовый курс
+        a(href="###") Расширенный курс
+
+    div(class="tabs_content")
+        -for( i=1; i<=3 ; i++ )
+            div(class="program_details")
+                div.program
+                    i Базовый курс
+                    h2 Программа курса
+                    ul.list
+                        li.item
+                            div.block
+                                strong Теория
+                                div.mark
+                            div.description
+                                ul
+                                    li Основы стрижек: базовые классические формы, адаптация стрижек под клиента, коррекция формы головы и овала лица при помощи стрижек;
+                                    li Отработка женских, мужских стрижек: классические, модельные;
+                                    li Укладки холодным, горячим способом.
+                        li.item
+                            div.block
+                                strong Стрижки
+                                div.mark
+                            div.description
+                                ul
+                                    li Основы стрижек: базовые классические формы, адаптация стрижек под клиента, коррекция формы головы и овала лица при помощи стрижек;
+                                    li Отработка женских, мужских стрижек: классические, модельные;
+                                    li Укладки холодным, горячим способом.
+                        li.item
+                            div.block
+                                strong Колористика
+                                div.mark
+                            div.description
+                                ul
+                                    li Основы стрижек: базовые классические формы, адаптация стрижек под клиента, коррекция формы головы и овала лица при помощи стрижек;
+                                    li Отработка женских, мужских стрижек: классические, модельные;
+                                    li Укладки холодным, горячим способом.
+                        li.item
+                            div.block
+                                strong Прически
+                                div.mark
+                            div.description
+                                ul
+                                    li Основы стрижек: базовые классические формы, адаптация стрижек под клиента, коррекция формы головы и овала лица при помощи стрижек;
+                                    li Отработка женских, мужских стрижек: классические, модельные;
+                                    li Укладки холодным, горячим способом.
+                        li.item
+                            div.block
+                                strong Укладки
+                                div.mark
+                            div.description
+                                ul
+                                    li Основы стрижек: базовые классические формы, адаптация стрижек под клиента, коррекция формы головы и овала лица при помощи стрижек;
+                                    li Отработка женских, мужских стрижек: классические, модельные;
+                                    li Укладки холодным, горячим способом.
+                        li.item
+                            div.block
+                                strong Бонусное занятие
+                                div.mark
+                            div.description
+                                ul
+                                    li Семинар «Сложные техники окрашивания: омбре, шатуш, балаяж»
+                div.order
+                    div.price 50 000 руб.
+                    div.credit
+                        span В рассрочку:
+                        strong 12 000 руб. / мес.  ( 48 000 руб )
+                    div.buttons
+                        div(target-modal="order").button Записаться
+                        div(target-modal="order").button.empty Купить в кредит
+                    div.complexity
+                        i Сложность
+                        strong Продвинутый
+                    div.time
+                        i Продолжительность
+                        strong 192 академ. часа
+                        div.merge
+                            div
+                                img(src="images/calendar.svg")
+                                span 4 месяца
+                            div
+                                img(src="images/study_hat.svg")
+                                span 36 занятий
+                    div.schedule
+                        i График
+                        strong 4 академ. часа / день
+                        div.merge
+                            div
+                                img(src="images/morning.svg")
+                                span Утро
+                            div
+                                img(src="images/day.svg")
+                                span День
+                            div
+                                img(src="images/evening.svg")
+                                span Вечер
+
+section(class="course_advantages")
+    div.wrap
+        ul
+            li
+                include ../images/teacher.svg
+                span
+                    b Преподаватели-практики, лучшие мастера
+                    | в своей области
+            li
+                include ../images/scissors.svg
+                span На период обучения 
+                    b предоставляем весь расходный материал
+                    | и моделей для практики
+            li
+                include ../images/future.svg
+                span Программа курса, 
+                    b разработана с учётом самых последних технологий
+                    | с акцентом на практику
+            li
+                include ../images/payment.svg
+                span
+                    b Гибкая система оплаты и графика
+                    | обучения
+
+section(class="course_documents")
+    div.wrap
+        div.content
+            h2 Какие документы я получу после обучения?
+            p По окончании данного курса Вы получите 
+                b официальное свидетельство
+                | +
+                b международный сертификат
+                | , с которым сможете официально работать.
+            div.examples
+                span Примеры:
+                ul
+                    li
+                        img(src="images/download.svg")
+                        a(href="images/license.webp", target="blanc") Официальное свидетельство
+                    li
+                        img(src="images/download.svg")
+                        a(href="images/license.webp", target="blanc") Международный сертификат
+            b Образовательная деятельность осуществляется на основании 
+                a(href="images/license.webp", target="blanc") лицензии Министерства образования РО №4773
+                | от “6” мая 2015г.
+        div.image
+            img(src="images/doucuments.webp")
+            
+section.gallery
+    div.list.carousel
+        -for( i=1; i<=12 ; i++ )
+            div
+                div(style="background-image: url('images/courses/course_" + i + ".webp');").preview
+
+include parts/_reviews.pug
+include parts/_teachers.pug
+include parts/_faq.pug
+include parts/_question.pug
+include parts/_popup_order.pug
+
+script(defer).
+    $(document).on('click', '.tabs_caption a', function(){
+    $('[modal=order] i').text( $(this).text() )
+    $('[modal=order] [name=Тариф]').val( $(this).text() )
+    })
+
+include parts/_footer.pug

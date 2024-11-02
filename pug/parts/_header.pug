@@ -1,0 +1,48 @@
+section.header
+    div.wrap
+        div.adress
+            include ../../images/pin.svg
+            span г. Ростов-на-Дону,
+                br
+                | ул. Пушкинская, 25/67
+        a(href="index.html").logotype
+            include ../../images/logotype.svg
+        div.phones
+            a(href="tel:8 (928) 226-43-29") 8 (928) 226-43-29
+            a(href="tel:8 (928) 226-43-45") 8 (928) 226-43-45
+        div(target-modal="menu").mobile
+            div
+            div
+            div
+section.menu
+    div.wrap
+        ul
+            li: a(href="index.html") Главная
+            li.has-child: a(href="categories.html") Направления
+                ul
+                    li: a(href="category.html") Парикмахерское исскуство
+                    li: a(href="category.html") Маникюр
+                    li: a(href="category.html") Педикюр
+                    li: a(href="category.html") Косметология
+                    li: a(href="category.html") Массажист
+                    li: a(href="category.html") Визажист
+                    li: a(href="category.html") Стилист
+                    li: a(href="category.html") Ресницы
+                    li: a(href="category.html") Брови
+                    li: a(href="category.html") Татуаж
+            li.has-child: a(href="text.html") Академия
+                ul
+                    li: a(href="text.html") Об академии
+                    li: a(href="teachers.html") Преподователи
+                    li: a(href="text.html") Льготное обучение
+                    li: a(href="text.html") Аттестация
+                    li: a(href="reviews.html") Отзывы
+                    li: a(href="articles.html") Новости
+                    li: a(href="articles.html") Статьи
+                    li: a(href="jobs.html") Биржа труда
+                    li: a(href="https://shop-mskr.ru") Интернет магазин
+            li: a(href="contacts.html") Контакты
+            li.online
+                a(href="https://mskr-online.ru", target="_blanc")
+                    include ../../images/online.svg
+                    span Онлайн обучение

@@ -1,0 +1,23 @@
+section(modal="order")
+    include ../../images/cross.svg
+    div(style="background-image: url('images/courses/course_1.webp')").preview
+    div.content
+        i Эксперсс курс
+        h2 Парикмахер – универсал
+        form(action="send_mail.html")
+            input(type="hidden", name="Форма", value="Запись на курс")
+            input(type="hidden", name="Курс", value="Парикмахер – универсал")
+            input(type="hidden", name="Тариф", value="Экспресс курс")
+            div.input
+                input(name="Имя", type="text", placeholder=" ", minlength="3", required)
+                label(for="Имя") Введите ваше Имя
+            div.input
+                input(name="Почта", type="email", placeholder=" ", required)
+                label(for="Почта") Введите ваше email
+            div.input
+                input(name="Телефон", type="text", placeholder=" ", required)
+                label(for="Телефон") Введите ваш телефон
+            span.personal
+                span Нажимая на кнопку, вы даете согласие на обработку своих
+                a(href="###") персональных данных
+            input(type="submit", value="Отправить")

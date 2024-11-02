@@ -1,0 +1,69 @@
+section.reviews
+    div.wrap
+        div.header
+            h2 Последние отзывы
+            div.stars
+                img(src="images/star.svg")
+                img(src="images/star.svg")
+                img(src="images/star.svg")
+                img(src="images/star.svg")
+                img(src="images/star.svg")
+                span 77 отзывов
+            a(href="reviews.html").link
+                span Все отзывы
+                include ../../images/right_arrow.svg
+        div.content
+            div.list
+                -for( i=1; i<=4 ; i++ )
+                    div.item
+                        ul.stars
+                            img(src="images/star.svg")
+                            img(src="images/star.svg")
+                            img(src="images/star.svg")
+                            img(src="images/star.svg")
+                            img(src="images/star.svg")
+                            span.date 19.12.2020
+                        strong.name Наталия
+                        p Очень благодарна Кугушевой Татьяне Вячеславовне за полученные знания! Она талантливый и чуткий преподаватель, объясняла все чётко и понятно…
+                        a(target-modal="review") Читать полностью
+                        p.full Если вы решили здесь пройти курс косметологоа, то постарайтесь не попасть к Кочетковой Анастасии Владимировне. Очень много апломба, общается с учениками как будто профессор с детсадовцами. Почему то позволяет себе обращаться ко всем на ты, хотя ученица может быть старше на 15-20 лет. Фразы типа за” каждую невыщипанную бровь будете получать подзатыльник” или “поедете к моделям делать уборку” для нее в порядке вещей, причем в присутствии моделей. Экзамен по теории почему то тоже принимается в присутствии моделей. Очень неприятный осадок от обучения на этом курсе остался, нигде такого отношения не встречала за свои деньги.
+            div.form
+                h3 Хотите поделиться свои мнением?
+                form(action="send_mail.html")
+                    ul.stars
+                        input#star-5(type="radio", name="Звезд", value="5", checked).star.star-5
+                        label(for="star-5").star.star-5
+                            include ../../images/star.svg
+                        input#star-4(type="radio", name="Звезд", value="4").star.star-4
+                        label(for="star-4").star.star-4
+                            include ../../images/star.svg
+                        input#star-3(type="radio", name="Звезд", value="3").star.star-3
+                        label(for="star-3").star.star-3
+                            include ../../images/star.svg
+                        input#star-2(type="radio", name="Звезд", value="2").star.star-2
+                        label(for="star-2").star.star-2
+                            include ../../images/star.svg
+                        input#star-1(type="radio", name="Звезд", value="1").star.star-1
+                        label(for="star-1").star.star-1
+                            include ../../images/star.svg
+                        span Ваша оценка:
+                    input(type="hidden", name="Форма", value="Новый отзыв")
+                    div.input
+                        input(name="Имя", type="text", placeholder=" ", minlength="3", required)
+                        label(for="Имя") Введите ваше Имя
+                    div.input
+                        input(name="Почта", type="email", placeholder=" ", required)
+                        label(for="Почта") Введите ваше email
+                    div.textarea
+                        textarea(name="Отзыв", rows="1", placeholder=" ", minlength="20", required)
+                        label(for="Отзыв") Ваш отзыв
+                    span.personal
+                        span Нажимая на кнопку, вы даете согласие на обработку своих
+                        a(href="###") персональных данных
+                    input(type="submit", value="Отправить")
+        script(defer).
+            $(document).on('click', 'section.reviews .content .item a', function(){
+                $('[modal=review] p.full').text( $(this).next().text() )
+            })
+
+include _popup_review.pug

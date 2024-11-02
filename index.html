@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+        <script defer src="scripts/script.js"></script>
+        <script defer src="scripts/slick.js"></script>
+        <script defer src="scripts/modal.js"></script>
+        <script src="scripts/maskinput.js"></script>
+        <title>Мастерская красоты</title>
+    </head>
+    <body>
+        <script>
+            var adress = "г. Ростов-на-Дону, ул. Пушкинская, 25/67";
+            var phone = "8 (928) 226-43-29";
+            var email = "moook.email@gmail.com";
+            var coord = "[47.222506, 39.700730]";
+        </script>
+    </body>
+</html>
+<section class="header">
+    <div class="wrap">
+        <div class="adress"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="26.148" viewBox="0 0 22 26.148">
+  <g id="pin" transform="translate(-4.997 -2.927)">
+    <path id="Контур_8" data-name="Контур 8" d="M23.775,6.15A11,11,0,1,0,8.219,21.71l4.1,4.1a1,1,0,1,0,1.42-1.42l-4.1-4.1a9,9,0,1,1,12.716,0l-7.068,7.07a1,1,0,1,0,1.42,1.42l7.068-7.07a11,11,0,0,0,0-15.56Z" fill="#e51026"/>
+    <path id="Контур_9" data-name="Контур 9" d="M21,14a5,5,0,1,0-5,5,5,5,0,0,0,5-5Zm-8,0a3,3,0,1,1,3,3,3,3,0,0,1-3-3Z" transform="translate(-0.003)" fill="#e51026"/>
+  </g>
+</svg>
+<span>г. Ростов-на-Дону,<br>ул. Пушкинская, 25/67</span>
+        </div><a class="logotype" href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="211.935" height="80" viewBox="0 0 211.935 80">
+  <g id="logotype" transform="translate(-854 -40)">
+    <g id="Text" transform="translate(710.625 -1251.534)">
+      <path id="Контур_1" data-name="Контур 1" d="M353.359,1600.557h1.951V1590h-1.951Zm-6.094-1.577v-3.5h.535a3.316,3.316,0,0,1,1.684.321,1.49,1.49,0,0,1,.722,1.417c0,1.176-.7,1.764-2.272,1.764Zm-1.951,1.577h2.566c3.154,0,4.277-1.443,4.277-3.368a2.831,2.831,0,0,0-1.577-2.753,5.717,5.717,0,0,0-2.807-.535h-.508V1590h-1.951Zm-9.141,0H338.1v-8.927h2.833l.535-1.63H333.1v1.63h3.074Zm-11.574-1.47c-1.951,0-3.261-1.39-3.261-3.769,0-2.406,1.31-3.8,3.261-3.8,2,0,3.288,1.443,3.288,3.8,0,2.379-1.336,3.769-3.288,3.769m0,1.631a5.413,5.413,0,1,0-5.319-5.4,5.13,5.13,0,0,0,5.319,5.4m-9.168-2.352a5.174,5.174,0,0,1-2.619.721,3.407,3.407,0,0,1-3.5-3.742,3.513,3.513,0,0,1,3.582-3.823,5.794,5.794,0,0,1,2.726.669V1590.4a7.074,7.074,0,0,0-2.78-.508,5.341,5.341,0,0,0-5.587,5.506,4.947,4.947,0,0,0,5.346,5.319,6.644,6.644,0,0,0,3.341-.828Zm-17.507-2.032.775-2.085a13.48,13.48,0,0,0,.535-1.657h.027c.107.374.24.856.535,1.657l.748,2.085Zm-3.555,4.223h2l.989-2.646h3.769l1.016,2.646h2.084l-4.25-10.611h-1.524Zm-7.19-5.212v-3.8h.535a2.433,2.433,0,0,1,1.31.294,1.714,1.714,0,0,1,.855,1.6A1.686,1.686,0,0,1,289,1595.1a2.719,2.719,0,0,1-1.23.241Zm-1.925,5.212h1.925v-3.635h.454a6.428,6.428,0,0,0,2.245-.374,3.146,3.146,0,0,0,2-3.1,3.082,3.082,0,0,0-1.711-2.994,5.1,5.1,0,0,0-2.379-.454h-2.539Zm-12.375,0h1.951v-4.544h1.47c.321,0,.615.24,1.042,1.149l1.63,3.394h2.218l-2.112-4.089c-.4-.748-.748-1.149-1.2-1.31v-.026c.962-.588,1.256-2.272,1.737-3.074a.8.8,0,0,1,.748-.428,1.53,1.53,0,0,1,.642.134v-1.711a3.235,3.235,0,0,0-1.016-.16,2,2,0,0,0-1.844,1.1c-.748,1.417-.882,3.448-2.379,3.448h-.936V1590h-1.951Zm-15.85-7.3a1.668,1.668,0,0,1,1.9-1.711H260.1v3.315h-1.123c-1.123,0-1.951-.454-1.951-1.6m-3.047,7.3h2.245l1.337-2.967c.428-.909.695-1.149,1.015-1.149H260.1v4.116h1.924V1590h-3.368c-2.085,0-3.662,1.069-3.662,3.127a2.582,2.582,0,0,0,1.791,2.566v.027c-.428.241-.641.562-1.042,1.337Zm-9.783-4.223.748-2.085c.294-.8.454-1.283.562-1.657h.027a13.4,13.4,0,0,0,.535,1.657l.722,2.085Zm-3.582,4.223h2l.989-2.646h3.769l1.042,2.646h2.085l-4.25-10.611h-1.55Zm-11.788,0h1.951v-4.544h1.47c.321,0,.615.24,1.042,1.149l1.63,3.394h2.219L235,1596.468c-.374-.748-.722-1.149-1.2-1.31v-.026c.989-.588,1.283-2.272,1.764-3.074a.794.794,0,0,1,.748-.428,1.612,1.612,0,0,1,.641.134v-1.711a3.235,3.235,0,0,0-1.016-.16,2,2,0,0,0-1.844,1.1c-.775,1.417-.882,3.448-2.379,3.448h-.936V1590h-1.951Zm-4.624-2.191a5,5,0,0,1-2.593.721,3.407,3.407,0,0,1-3.5-3.742,3.508,3.508,0,0,1,3.555-3.823,5.639,5.639,0,0,1,2.726.669V1590.4a6.835,6.835,0,0,0-2.753-.508,5.326,5.326,0,0,0-5.586,5.506,4.947,4.947,0,0,0,5.346,5.319,6.777,6.777,0,0,0,3.341-.828Zm-16.839-3.021v-3.8h.535a2.433,2.433,0,0,1,1.31.294,1.765,1.765,0,0,1,.855,1.6,1.686,1.686,0,0,1-.882,1.657,2.765,2.765,0,0,1-1.257.241Zm-1.924,5.212h1.924v-3.635h.454a6.432,6.432,0,0,0,2.245-.374,3.184,3.184,0,0,0,2-3.1,3.083,3.083,0,0,0-1.711-2.994,5.177,5.177,0,0,0-2.379-.454H205.44Zm-10.344,0h5.854v-1.63H197.02v-2.913h3.395v-1.63H197.02v-2.753h3.395l.535-1.63H195.1Zm-9.141,0h1.924v-8.927h2.833l.535-1.63h-8.366v1.63h3.074Zm-7-2.191a5,5,0,0,1-2.593.721,3.406,3.406,0,0,1-3.5-3.742,3.507,3.507,0,0,1,3.555-3.823,5.64,5.64,0,0,1,2.727.669V1590.4a6.837,6.837,0,0,0-2.753-.508,5.326,5.326,0,0,0-5.586,5.506,4.947,4.947,0,0,0,5.346,5.319,6.776,6.776,0,0,0,3.341-.828Zm-17.481-2.032.748-2.085c.294-.8.454-1.283.561-1.657h.027c.107.374.24.856.535,1.657l.722,2.085Zm-3.555,4.223h2l.989-2.646h3.769l1.016,2.646h2.085l-4.25-10.611h-1.55Zm-14.541,0H145.3v-7.35h.027a6.465,6.465,0,0,0,.721,1.1l2.3,3.314h.882l2.085-3.234c.187-.294.588-.882.722-1.176h.027c-.027.4-.027.962-.027,1.39v5.96h1.951V1590h-1.764l-2.539,3.929c-.374.562-.641,1.016-.882,1.417h-.027c-.24-.428-.507-.8-.882-1.363l-2.78-3.983h-1.737Z" transform="translate(0 -247.6)" fill="#231f20"/>
+      <path id="Контур_2" data-name="Контур 2" d="M-543.294-57.269a1.309,1.309,0,0,1-1.47-1.31c0-.935.641-1.416,1.631-1.416h.882v2.726Zm-1.1.561a2.33,2.33,0,0,0-.829,1.016L-546.5-53.34h1.123l1.123-2.192c.347-.642.668-.882.909-.882h1.1v3.074h1.042v-7.511h-2.031a2.28,2.28,0,0,0-2.566,2.245,1.925,1.925,0,0,0,1.417,1.871Zm-9.436,1.818c0-.4.027-1.123.027-1.631v-4.33h-1.042v7.511h.909l3.368-4.357c.481-.615.882-1.149,1.229-1.657v6.014h1.016v-7.511h-.962l-3.288,4.277A19.994,19.994,0,0,0-553.8-54.89Zm-11.146,1.55h1.042v-4.3c0-.481,0-1.176-.027-1.5h.027c.214.347.588.936.855,1.363l1.55,2.406h.535l1.55-2.406c.267-.428.615-1.016.855-1.363h.027c-.027.321-.053,1.016-.053,1.5v4.3h1.042v-7.511h-.935l-1.764,2.726c-.4.615-.775,1.2-.989,1.55h-.027c-.187-.348-.561-.936-.962-1.55l-1.791-2.726h-.936Zm-6.522,0h4.116V-54.2h-3.074v-2.539h2.806v-.829h-2.806V-60h2.86l.347-.855h-4.25Zm-3.956-.882H-578.9v-.027A15.213,15.213,0,0,0-576.919-60h1.47Zm-5.132,2.94h1.042V-53.34h5v2.058h1.015v-2.94h-.882v-6.629h-3.315a14.8,14.8,0,0,1-2.352,6.629h-.508Zm-5.212-4.731.748-2c.161-.4.321-.909.481-1.363h.027c.161.454.321.936.481,1.337l.748,2.031Zm-2.085,2.673h1.1l.668-1.844h3.127l.695,1.844h1.1l-2.967-7.565h-.722Zm-3.287-3.822c.8-.561.962-1.657,1.31-2.459a.585.585,0,0,1,.535-.348,1.478,1.478,0,0,1,.455.08v-.936a2.394,2.394,0,0,0-.588-.08,1.271,1.271,0,0,0-1.2.8c-.428.909-.562,2.566-1.791,2.566h-.695v-3.314h-1.042v7.511h1.042v-3.341h1.1c.214,0,.535.267.855.882l1.363,2.459h1.123l-1.5-2.673a2.6,2.6,0,0,0-.962-1.123Zm-9.275,1.149.748-2c.161-.4.321-.909.481-1.363h.027c.161.454.321.936.481,1.337l.748,2.031Zm-2.085,2.673h1.1l.668-1.844h3.127l.7,1.844h1.1l-2.994-7.565h-.721Z" transform="translate(820.047 1422.816)" fill="#231f20"/>
+    </g>
+    <g id="Emblem" transform="translate(710.625 -1251.534)">
+      <path id="Контур_3" data-name="Контур 3" d="M0,0H2.833V8.82L0,10.21Z" transform="translate(270.659 1329.784) rotate(180)" fill="#e51026"/>
+      <path id="Контур_4" data-name="Контур 4" d="M-307.2-15.668l-33.492-16.144v3.154L-307.2-12.541l30.658-14.728v8.179l2.833-1.39v-11.28Z" transform="translate(544.363 1323.347)" fill="#e51026"/>
+      <path id="Контур_5" data-name="Контур 5" d="M-307.44-45.418l-33.518-16.091v23.575h2.833V-57.018l30.685,14.754L-243.424-73v-3.127Z" transform="translate(544.608 1367.797)" fill="#e51026"/>
+      <path id="Контур_6" data-name="Контур 6" d="M-59.82-113.268l19.218-9.195v-3.154l-25.74,12.349,25.74,12.349v-3.127Z" transform="translate(341.785 1430.836)" fill="#e51026"/>
+      <path id="Контур_7" data-name="Контур 7" d="M-6.7-27.907h.749c.781,0,1.276-.428,1.276-1.076,0-.731-.529-1.051-1.3-1.059a3.039,3.039,0,0,0-.723.067Zm-.73-2.579a7.627,7.627,0,0,1,1.4-.118,2.316,2.316,0,0,1,1.639.462,1.411,1.411,0,0,1,.445,1.076,1.487,1.487,0,0,1-1.067,1.445v.026a1.411,1.411,0,0,1,.832,1.143A9.12,9.12,0,0,0-3.741-24.9H-4.5a7.386,7.386,0,0,1-.378-1.353c-.168-.782-.471-1.076-1.134-1.1H-6.7V-24.9h-.73Z" transform="translate(315.308 1353.642)" fill="#e51026"/>
+      <circle id="Эллипс_1" data-name="Эллипс 1" cx="4.027" cy="4.027" r="4.027" transform="translate(305.559 1329.956) rotate(-90)" fill="none" stroke="#e51026" stroke-miterlimit="10" stroke-width="0.8"/>
+    </g>
+  </g>
+</svg>
+</a>
+        <div class="phones"><a href="tel:8 (928) 226-43-29">8 (928) 226-43-29</a><a href="tel:8 (928) 226-43-45">8 (928) 226-43-45</a></div>
+        <div class="mobile" target-modal="menu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</section>
+<section class="menu">
+    <div class="wrap">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li class="has-child"><a href="categories.html">Направления
+                    <ul>
+                        <li><a href="category.html">Парикмахерское исскуство</a></li>
+                        <li><a href="category.html">Маникюр</a></li>
+                        <li><a href="category.html">Педикюр</a></li>
+                        <li><a href="category.html">Косметология</a></li>
+                        <li><a href="category.html">Массажист</a></li>
+                        <li><a href="category.html">Визажист</a></li>
+                        <li><a href="category.html">Стилист</a></li>
+                        <li><a href="category.html">Ресницы</a></li>
+                        <li><a href="category.html">Брови</a></li>
+                        <li><a href="category.html">Татуаж</a></li>
+                    </ul></a></li>
+            <li class="has-child"><a href="text.html">Академия
+                    <ul>
+                        <li><a href="text.html">Об академии</a></li>
+                        <li><a href="teachers.html">Преподователи</a></li>
+                        <li><a href="text.html">Льготное обучение</a></li>
+                        <li><a href="text.html">Аттестация</a></li>
+                        <li><a href="reviews.html">Отзывы</a></li>
+                        <li><a href="articles.html">Новости</a></li>
+                        <li><a href="articles.html">Статьи</a></li>
+                        <li><a href="jobs.html">Биржа труда</a></li>
+                        <li><a href="https://shop-mskr.ru">Интернет магазин</a></li>
+                    </ul></a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li class="online"><a href="https://mskr-online.ru" target="_blanc"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="20" viewBox="0 0 26 20">
+  <g id="online" transform="translate(-1275.319 -172.79)">
+    <circle id="Эллипс_5" data-name="Эллипс 5" cx="3" cy="3" r="3" transform="translate(1285 179)" fill="#e51026"/>
+    <path id="Контур_10" data-name="Контур 10" d="M-.262-.115A7.959,7.959,0,0,1,1.325,4.476,7.968,7.968,0,0,1-.262,9.069" transform="translate(1293.5 177.5)" fill="none" stroke="#e51026" stroke-linecap="round" stroke-width="1.5"/>
+    <path id="Контур_11" data-name="Контур 11" d="M-.262-.115A13.021,13.021,0,0,1,3.072,8.022,12.713,12.713,0,0,1-.262,16.087" transform="translate(1296.859 173.966)" fill="none" stroke="#e51026" stroke-linecap="round" stroke-width="1.5"/>
+    <path id="Контур_12" data-name="Контур 12" d="M1.325-.115A7.959,7.959,0,0,0-.262,4.476,7.968,7.968,0,0,0,1.325,9.069" transform="translate(1281.437 177.5)" fill="none" stroke="#e51026" stroke-linecap="round" stroke-width="1.5"/>
+    <path id="Контур_13" data-name="Контур 13" d="M3.072-.115A13.021,13.021,0,0,0-.262,8.022a12.713,12.713,0,0,0,3.334,8.064" transform="translate(1276.331 173.966)" fill="none" stroke="#e51026" stroke-linecap="round" stroke-width="1.5"/>
+  </g>
+</svg>
+<span>Онлайн обучение</span></a></li>
+        </ul>
+    </div>
+</section>
+<section class="banner">
+    <div class="preview" style="background-image: url(images/background.webp)"></div>
+    <div class="wrap">
+        <div class="image"><img src="images/banner.webp"></div>
+        <div class="content"><i>«Мастерская красоты»</i>
+            <h1>Федеральная сеть учебных заведений</h1>
+            <p>“Мастерская красоты” – это группа компаний, комплексно обслуживающая сферу индустрии красоты.</p>
+        </div>
+    </div>
+</section>
+<section class="directions">
+    <div class="wrap">
+        <h2>Направления:</h2>
+        <ul>
+            <li><a href="category.html">Парикмахерское исскуство</a></li>
+            <li><a href="category.html">Маникюр</a></li>
+            <li><a href="category.html">Педикюр</a></li>
+            <li><a href="category.html">Косметология</a></li>
+            <li><a href="category.html">Массажист</a></li>
+            <li><a href="category.html">Визажист</a></li>
+            <li><a href="category.html">Стилист</a></li>
+            <li><a href="category.html">Ресницы</a></li>
+            <li><a href="category.html">Брови</a></li>
+            <li><a href="category.html">Татуаж</a></li>
+        </ul>
+    </div>
+</section>
+<section class="courses">
+    <div class="wrap">
+        <div class="header">
+            <h2>Последние курсы</h2><a class="link" href="categories.html"><span>Все курсы</span><svg xmlns="http://www.w3.org/2000/svg" width="50" height="20">
+  <g id="right_arrow_red">
+    <line x1="20" y1="10" x2="49" y2="10" stroke="#e51026" stroke-linecap="round" stroke-width="1.3"/>
+    <line x1="40" y1="2" x2="49" y2="10" stroke="#e51026" stroke-linecap="round" stroke-width="1.3"/>
+    <line x1="40" y1="18" x2="49" y2="10" stroke="#e51026" stroke-linecap="round" stroke-width="1.3"/>
+  </g>
+</svg>
+</a>
+        </div>
+        <div class="carousel_wrap"><svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" class="left_arrow" viewBox="0 0 62 62">
+<g transform="translate(-30 -1109)"><g transform="translate(30 1109)" fill="#fff" stroke="rgba(0,0,0,0.1)" stroke-width="1"><circle cx="31" cy="31" r="31" stroke="none"/><circle cx="31" cy="31" r="30.5" fill="none"/></g><line x1="6.5" y2="6.5" transform="translate(57.75 1133.5)" fill="none" stroke="#252a2f" stroke-linecap="round" stroke-width="2"/><line x1="6.5" y1="6.5" transform="translate(57.75 1140)" fill="none" stroke="#252a2f" stroke-linecap="round" stroke-width="2"/>
+</g>
+</svg>
+            <div class="list carousel"><a class="card linked" href="course.html">
+                    <div class="preview" style="background-image: url('images/courses/course_1.webp')"></div>
+                    <div class="content">
+                        <div class="complexity hard">
+                            <div></div>
+                            <div></div>
+                            <div></div><span>Продвинутый</span>
+                        </div><strong>Парикмахер – универсал</strong>
+                        <p>Обучись искусству создания причесок, которые ты сможешь повторять самостоятельно</p><span class="price">от 48 000 руб.</span>
+                    </div></a><a class="card linked" href="course.html">
+                    <div class="preview" style="background-image: url('images/courses/course_2.webp')"></div>
+                    <div class="content">
+                        <div class="complexity hard">
+                            <div></div>
+                            <div></div>
+                            <div></div><span>Продвинутый</span>
+                        </div><strong>Парикмахер – универсал</strong>
+                        <p>Обучись искусству создания причесок, которые ты сможешь повторять самостоятельно</p><span class="price">от 48 000 руб.</span>
+                    </div></a><a class="card linked" href="course.html">
+                    <div class="preview" style="background-image: url('images/courses/course_3.webp')"></div>
+                    <div class="content">
+                        <div class="complexity hard">
+                            <div></div>
+                            <div></div>
+                            <div></div><span>Продвинутый</span>
+                        </div><strong>Парикмахер – универсал</strong>
+                        <p>Обучись искусству создания причесок, которые ты сможешь повторять самостоятельно</p><span class="price">от 48 000 руб.</span>
+                    </div></a><a class="card linked" href="course.html">
+                    <div class="preview" style="background-image: url('images/courses/course_4.webp')"></div>
+                    <div class="content">
+                        <div class="complexity hard">
+                            <div></div>
+                            <div></div>
+                            <div></div><span>Продвинутый</span>
+                        </div><strong>Парикмахер – универсал</strong>
+                        <p>Обучись искусству создания причесок, которые ты сможешь повторять самостоятельно</p><span class="price">от 48 000 руб.</span>
+                    </div></a><a class="card linked" href="course.html">
+                    <div class="preview" style="background-image: url('images/courses/course_5.webp')"></div>
+                    <div class="content">
+                        <div class="complexity hard">
+                            <div></div>
+                            <div></div>
+                            <div></div><span>Продвинутый</span>
+                        </div><strong>Парикмахер – универсал</strong>
+                        <p>Обучись искусству создания причесок, которые ты сможешь повторять самостоятельно</p><span class="price">от 48 000 руб.</span>
+                    </div></a><a class="card linked" href="course.html">
+                    <div class="preview" style="background-image: url('images/courses/course_6.webp')"></div>
+                    <div class="content">
+                        <div class="complexity hard">
+                            <div></div>
+                            <div></div>
+                            <div></div><span>Продвинутый</span>
+                        </div><strong>Парикмахер – универсал</strong>
+                        <p>Обучись искусству создания причесок, которые ты сможешь повторять самостоятельно</p><span class="price">от 48 000 руб.</span>
+                    </div></a><a class="card linked" href="course.html">
+                    <div class="preview" style="background-image: url('images/courses/course_7.webp')"></div>
+                    <div class="content">
+                        <div class="complexity hard">
+                            <div></div>
+                            <div></div>
+                            <div></div><span>Продвинутый</span>
+                        </div><strong>Парикмахер – универсал</strong>
+                        <p>Обучись искусству создания причесок, которые ты сможешь повторять самостоятельно</p><span class="price">от 48 000 руб.</span>
+                    </div></a><a class="card linked" href="course.html">
+                    <div class="preview" style="background-image: url('images/courses/course_8.webp')"></div>
+                    <div class="content">
+                        <div class="complexity hard">
+                            <div></div>
+                            <div></div>
+                            <div></div><span>Продвинутый</span>
+                        </div><strong>Парикмахер – универсал</strong>
+                        <p>Обучись искусству создания причесок, которые ты сможешь повторять самостоятельно</p><span class="price">от 48 000 руб.</span>
+                    </div></a><a class="card linked" href="course.html">
+                    <div class="preview" style="background-image: url('images/courses/course_9.webp')"></div>
+                    <div class="content">
+                        <div class="complexity hard">
+                            <div></div>
+                            <div></div>
+                            <div></div><span>Продвинутый</span>
+                        </div><strong>Парикмахер – универсал</strong>
+                        <p>Обучись искусству создания причесок, которые ты сможешь повторять самостоятельно</p><span class="price">от 48 000 руб.</span>
+                    </div></a><a class="card linked" href="course.html">
+                    <div class="preview" style="background-image: url('images/courses/course_10.webp')"></div>
+                    <div class="content">
+                        <div class="complexity hard">
+                            <div></div>
+                            <div></div>
+                            <div></div><span>Продвинутый</span>
+                        </div><strong>Парикмахер – универсал</strong>
+                        <p>Обучись искусству создания причесок, которые ты сможешь повторять самостоятельно</p><span class="price">от 48 000 руб.</span>
+                    </div></a><a class="card linked" href="course.html">
+                    <div class="preview" style="background-image: url('images/courses/course_11.webp')"></div>
+                    <div class="content">
+                        <div class="complexity hard">
+                            <div></div>
+                            <div></div>
+                            <div></div><span>Продвинутый</span>
+                        </div><strong>Парикмахер – универсал</strong>
+                        <p>Обучись искусству создания причесок, которые ты сможешь повторять самостоятельно</p><span class="price">от 48 000 руб.</span>
+                    </div></a><a class="card linked" href="course.html">
+                    <div class="preview" style="background-image: url('images/courses/course_12.webp')"></div>
+                    <div class="content">
+                        <div class="complexity hard">
+                            <div></div>
+                            <div></div>
+                            <div></div><span>Продвинутый</span>
+                        </div><strong>Парикмахер – универсал</strong>
+                        <p>Обучись искусству создания причесок, которые ты сможешь повторять самостоятельно</p><span class="price">от 48 000 руб.</span>
+                    </div></a>
+            </div><svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" class="right_arrow" viewBox="0 0 62 62"><g fill="#fff" stroke="rgba(0,0,0,0.1)" stroke-width="1"><circle cx="31" cy="31" r="31" stroke="none"/><circle cx="31" cy="31" r="30.5" fill="none"/></g><line x2="6.5" y2="6.5" transform="translate(27.75 24.5)" fill="none" stroke="#252a2f" stroke-linecap="round" stroke-width="2"/><line y1="6.5" x2="6.5" transform="translate(27.75 31)" fill="none" stroke="#252a2f" stroke-linecap="round" stroke-width="2"/></svg>
+        </div>
+    </div>
+</section>
+<section class="about">
+    <div class="images"><svg class="circle" xmlns="http://www.w3.org/2000/svg" width="1434" height="717" viewBox="0 0 1434 717">
+  <path id="Контур_14" data-name="Контур 14" d="M717,0c395.988,0,717,321.012,717,717H0C0,321.012,321.012,0,717,0Z" fill="#f7eced"/>
+</svg>
+<img class="brush" src="images/brush.webp"><img class="lipstick" src="images/lipstick.webp"><img class="cream" src="images/cream.webp"><img class="leaf" src="images/leaf.webp"><img class="leaf_full" src="images/leaf_full.webp"><img class="scissors" src="images/scissors.webp">
+    </div>
+    <div class="content"><i>Об академии</i>
+        <h1>Федеральная сеть учебных заведений «Мастерская красоты»</h1>
+        <p>“Мастерская красоты” – это группа компаний, комплексно обслуживающая сферу индустрии красоты. Мы работаем по направлениям: учебный центр – комплексное образование по всем направлениям индустрии красоты: парикмахерское искусство, ногтевой сервис, визаж, массаж, косметология;</p>
+        <div class="play" target-modal="video"><svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+  <g id="play" transform="translate(-780 -2300)">
+    <g id="Эллипс_8" data-name="Эллипс 8" transform="translate(780 2300)" fill="none" stroke="#e51026" stroke-width="1">
+      
+      <circle cx="20" cy="20" r="19.5" fill="none"/>
+    </g>
+    <g id="Многоугольник_14" data-name="Многоугольник 14" transform="translate(806.722 2311.5) rotate(90)" fill="#e51026">
+      <path d="M 14.68006038665771 8.500001907348633 L 2.319940090179443 8.500001907348633 C 2.014709949493408 8.500001907348633 1.891319990158081 8.268781661987305 1.860780000686646 8.197921752929688 C 1.830229997634888 8.12705135345459 1.74685001373291 7.878591537475586 1.956429958343506 7.656691551208496 L 8.136500358581543 1.113091468811035 C 8.231929779052734 1.012051463127136 8.361020088195801 0.956401526927948 8.5 0.956401526927948 C 8.638979911804199 0.956401526927948 8.768070220947266 1.012051463127136 8.863499641418457 1.113091468811035 L 15.04356956481934 7.656691551208496 C 15.25314998626709 7.878591537475586 15.16977024078369 8.12705135345459 15.13922023773193 8.197921752929688 C 15.10867977142334 8.268781661987305 14.98528957366943 8.500001907348633 14.68006038665771 8.500001907348633 Z" stroke="none"/>
+      <path d="M 8.5 1.456401348114014 L 2.319939613342285 7.999991416931152 C 2.319937705993652 7.999994277954102 2.319944381713867 7.999997138977051 2.319930076599121 8.000001907348633 L 14.6800594329834 8.000001907348633 C 14.68006134033203 7.999996662139893 14.68006324768066 7.999991893768311 14.68006992340088 7.999991416931152 L 8.501139640808105 1.456501483917236 C 8.501029968261719 1.45647144317627 8.50059986114502 1.456401348114014 8.5 1.456401348114014 M 8.5 0.4564018249511719 C 8.764849662780762 0.4564018249511719 9.029699325561523 0.5608615875244141 9.227009773254395 0.7697811126708984 L 15.40707969665527 7.313371658325195 C 16.00938034057617 7.951111793518066 15.55726051330566 9.000001907348633 14.6800594329834 9.000001907348633 L 2.319930076599121 9.000001907348633 C 1.442740440368652 9.000001907348633 0.9906196594238281 7.951111793518066 1.592920303344727 7.313371658325195 L 7.772990226745605 0.7697811126708984 C 7.97029972076416 0.5608615875244141 8.235150337219238 0.4564018249511719 8.5 0.4564018249511719 Z" stroke="none" fill="#e51026"/>
+    </g>
+  </g>
+</svg>
+<span>Смотреть видео</span>
+        </div>
+    </div>
+    <ul class="advantages">
+        <li><strong>168</strong><span>дипломов выдано в 2021 году</span></li>
+        <li><strong>60 000</strong><span>средний доход нашего выпускника</span></li>
+        <li><strong>120</strong><span>курсов различных направлений</span></li>
+        <li><strong>2013</strong><span>Занимаемся обучение более 8 лет</span></li>
+    </ul>
+</section>
+<section class="reviews">
+    <div class="wrap">
+        <div class="header">
+            <h2>Последние отзывы</h2>
+            <div class="stars"><img src="images/star.svg"><img src="images/star.svg"><img src="images/star.svg"><img src="images/star.svg"><img src="images/star.svg"><span>77 отзывов</span></div><a class="link" href="reviews.html"><span>Все отзывы</span><svg xmlns="http://www.w3.org/2000/svg" width="50" height="20">
+  <g id="right_arrow_red">
+    <line x1="20" y1="10" x2="49" y2="10" stroke="#e51026" stroke-linecap="round" stroke-width="1.3"/>
+    <line x1="40" y1="2" x2="49" y2="10" stroke="#e51026" stroke-linecap="round" stroke-width="1.3"/>
+    <line x1="40" y1="18" x2="49" y2="10" stroke="#e51026" stroke-linecap="round" stroke-width="1.3"/>
+  </g>
+</svg>
+</a>
+        </div>
+        <div class="content">
+            <div class="list">
+                <div class="item">
+                    <ul class="stars"><img src="images/star.svg"><img src="images/star.svg"><img src="images/star.svg"><img src="images/star.svg"><img src="images/star.svg"><span class="date">19.12.2020</span></ul><strong class="name">Наталия</strong>
+                    <p>Очень благодарна Кугушевой Татьяне Вячеславовне за полученные знания! Она талантливый и чуткий преподаватель, объясняла все чётко и понятно…</p><a target-modal="review">Читать полностью</a>
+                    <p class="full">Если вы решили здесь пройти курс косметологоа, то постарайтесь не попасть к Кочетковой Анастасии Владимировне. Очень много апломба, общается с учениками как будто профессор с детсадовцами. Почему то позволяет себе обращаться ко всем на ты, хотя ученица может быть старше на 15-20 лет. Фразы типа за” каждую невыщипанную бровь будете получать подзатыльник” или “поедете к моделям делать уборку” для нее в порядке вещей, причем в присутствии моделей. Экзамен по теории почему то тоже принимается в присутствии моделей. Очень неприятный осадок от обучения на этом курсе остался, нигде такого отношения не встречала за свои деньги.</p>
+                </div>
+                <div class="item">
+                    <ul class="stars"><img src="images/star.svg"><img src="images/star.svg"><img src="images/star.svg"><img src="images/star.svg"><img src="images/star.svg"><span class="date">19.12.2020</span></ul><strong class="name">Наталия</strong>
+                    <p>Очень благодарна Кугушевой Татьяне Вячеславовне за полученные знания! Она талантливый и чуткий преподаватель, объясняла все чётко и понятно…</p><a target-modal="review">Читать полностью</a>
+                    <p class="full">Если вы решили здесь пройти курс косметологоа, то постарайтесь не попасть к Кочетковой Анастасии Владимировне. Очень много апломба, общается с учениками как будто профессор с детсадовцами. Почему то позволяет себе обращаться ко всем на ты, хотя ученица может быть старше на 15-20 лет. Фразы типа за” каждую невыщипанную бровь будете получать подзатыльник” или “поедете к моделям делать уборку” для нее в порядке вещей, причем в присутствии моделей. Экзамен по теории почему то тоже принимается в присутствии моделей. Очень неприятный осадок от обучения на этом курсе остался, нигде такого отношения не встречала за свои деньги.</p>
+                </div>
+                <div class="item">
+                    <ul class="stars"><img src="images/star.svg"><img src="images/star.svg"><img src="images/star.svg"><img src="images/star.svg"><img src="images/star.svg"><span class="date">19.12.2020</span></ul><strong class="name">Наталия</strong>
+                    <p>Очень благодарна Кугушевой Татьяне Вячеславовне за полученные знания! Она талантливый и чуткий преподаватель, объясняла все чётко и понятно…</p><a target-modal="review">Читать полностью</a>
+                    <p class="full">Если вы решили здесь пройти курс косметологоа, то постарайтесь не попасть к Кочетковой Анастасии Владимировне. Очень много апломба, общается с учениками как будто профессор с детсадовцами. Почему то позволяет себе обращаться ко всем на ты, хотя ученица может быть старше на 15-20 лет. Фразы типа за” каждую невыщипанную бровь будете получать подзатыльник” или “поедете к моделям делать уборку” для нее в порядке вещей, причем в присутствии моделей. Экзамен по теории почему то тоже принимается в присутствии моделей. Очень неприятный осадок от обучения на этом курсе остался, нигде такого отношения не встречала за свои деньги.</p>
+                </div>
+                <div class="item">
+                    <ul class="stars"><img src="images/star.svg"><img src="images/star.svg"><img src="images/star.svg"><img src="images/star.svg"><img src="images/star.svg"><span class="date">19.12.2020</span></ul><strong class="name">Наталия</strong>
+                    <p>Очень благодарна Кугушевой Татьяне Вячеславовне за полученные знания! Она талантливый и чуткий преподаватель, объясняла все чётко и понятно…</p><a target-modal="review">Читать полностью</a>
+                    <p class="full">Если вы решили здесь пройти курс косметологоа, то постарайтесь не попасть к Кочетковой Анастасии Владимировне. Очень много апломба, общается с учениками как будто профессор с детсадовцами. Почему то позволяет себе обращаться ко всем на ты, хотя ученица может быть старше на 15-20 лет. Фразы типа за” каждую невыщипанную бровь будете получать подзатыльник” или “поедете к моделям делать уборку” для нее в порядке вещей, причем в присутствии моделей. Экзамен по теории почему то тоже принимается в присутствии моделей. Очень неприятный осадок от обучения на этом курсе остался, нигде такого отношения не встречала за свои деньги.</p>
+                </div>
+            </div>
+            <div class="form">
+                <h3>Хотите поделиться свои мнением?</h3>
+                <form action="send_mail.html">
+                    <ul class="stars">
+                        <input class="star star-5" id="star-5" type="radio" name="Звезд" value="5" checked>
+                        <label class="star star-5" for="star-5"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19">
+  <path id="Многоугольник_3" data-name="Многоугольник 3" d="M9.1,1.924a1,1,0,0,1,1.81,0L12.766,5.88a1,1,0,0,0,.78.567l4.34.545a1,1,0,0,1,.559,1.722L15.256,11.7a1,1,0,0,0-.3.918l.822,4.291a1,1,0,0,1-1.464,1.064l-3.834-2.108a1,1,0,0,0-.964,0L5.684,17.975A1,1,0,0,1,4.22,16.91l.822-4.291a1,1,0,0,0-.3-.918L1.555,8.714a1,1,0,0,1,.559-1.722l4.34-.545a1,1,0,0,0,.78-.567Z" fill="#e51026"/>
+</svg>
+
+                        </label>
+                        <input class="star star-4" id="star-4" type="radio" name="Звезд" value="4">
+                        <label class="star star-4" for="star-4"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19">
+  <path id="Многоугольник_3" data-name="Многоугольник 3" d="M9.1,1.924a1,1,0,0,1,1.81,0L12.766,5.88a1,1,0,0,0,.78.567l4.34.545a1,1,0,0,1,.559,1.722L15.256,11.7a1,1,0,0,0-.3.918l.822,4.291a1,1,0,0,1-1.464,1.064l-3.834-2.108a1,1,0,0,0-.964,0L5.684,17.975A1,1,0,0,1,4.22,16.91l.822-4.291a1,1,0,0,0-.3-.918L1.555,8.714a1,1,0,0,1,.559-1.722l4.34-.545a1,1,0,0,0,.78-.567Z" fill="#e51026"/>
+</svg>
+
+                        </label>
+                        <input class="star star-3" id="star-3" type="radio" name="Звезд" value="3">
+                        <label class="star star-3" for="star-3"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19">
+  <path id="Многоугольник_3" data-name="Многоугольник 3" d="M9.1,1.924a1,1,0,0,1,1.81,0L12.766,5.88a1,1,0,0,0,.78.567l4.34.545a1,1,0,0,1,.559,1.722L15.256,11.7a1,1,0,0,0-.3.918l.822,4.291a1,1,0,0,1-1.464,1.064l-3.834-2.108a1,1,0,0,0-.964,0L5.684,17.975A1,1,0,0,1,4.22,16.91l.822-4.291a1,1,0,0,0-.3-.918L1.555,8.714a1,1,0,0,1,.559-1.722l4.34-.545a1,1,0,0,0,.78-.567Z" fill="#e51026"/>
+</svg>
+
+                        </label>
+                        <input class="star star-2" id="star-2" type="radio" name="Звезд" value="2">
+                        <label class="star star-2" for="star-2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19">
+  <path id="Многоугольник_3" data-name="Многоугольник 3" d="M9.1,1.924a1,1,0,0,1,1.81,0L12.766,5.88a1,1,0,0,0,.78.567l4.34.545a1,1,0,0,1,.559,1.722L15.256,11.7a1,1,0,0,0-.3.918l.822,4.291a1,1,0,0,1-1.464,1.064l-3.834-2.108a1,1,0,0,0-.964,0L5.684,17.975A1,1,0,0,1,4.22,16.91l.822-4.291a1,1,0,0,0-.3-.918L1.555,8.714a1,1,0,0,1,.559-1.722l4.34-.545a1,1,0,0,0,.78-.567Z" fill="#e51026"/>
+</svg>
+
+                        </label>
+                        <input class="star star-1" id="star-1" type="radio" name="Звезд" value="1">
+                        <label class="star star-1" for="star-1"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19">
+  <path id="Многоугольник_3" data-name="Многоугольник 3" d="M9.1,1.924a1,1,0,0,1,1.81,0L12.766,5.88a1,1,0,0,0,.78.567l4.34.545a1,1,0,0,1,.559,1.722L15.256,11.7a1,1,0,0,0-.3.918l.822,4.291a1,1,0,0,1-1.464,1.064l-3.834-2.108a1,1,0,0,0-.964,0L5.684,17.975A1,1,0,0,1,4.22,16.91l.822-4.291a1,1,0,0,0-.3-.918L1.555,8.714a1,1,0,0,1,.559-1.722l4.34-.545a1,1,0,0,0,.78-.567Z" fill="#e51026"/>
+</svg>
+
+                        </label><span>Ваша оценка:</span>
+                    </ul>
+                    <input type="hidden" name="Форма" value="Новый отзыв">
+                    <div class="input">
+                        <input name="Имя" type="text" placeholder=" " minlength="3" required>
+                        <label for="Имя">Введите ваше Имя</label>
+                    </div>
+                    <div class="input">
+                        <input name="Почта" type="email" placeholder=" " required>
+                        <label for="Почта">Введите ваше email</label>
+                    </div>
+                    <div class="textarea">
+                        <textarea name="Отзыв" rows="1" placeholder=" " minlength="20" required></textarea>
+                        <label for="Отзыв">Ваш отзыв</label>
+                    </div><span class="personal"><span>Нажимая на кнопку, вы даете согласие на обработку своих</span><a href="###">персональных данных</a></span>
+                    <input type="submit" value="Отправить">
+                </form>
+            </div>
+        </div>
+        <script defer>
+            $(document).on('click', 'section.reviews .content .item a', function(){
+                $('[modal=review] p.full').text( $(this).next().text() )
+            })
+            
+        </script>
+    </div>
+</section>
+<section modal="review"><svg class="cross" xmlns="http://www.w3.org/2000/svg" width="18.828" height="18.828" viewBox="0 0 18.828 18.828">
+  <g id="cross" transform="translate(-1316.086 -185.086)">
+    <line id="Линия_51" data-name="Линия 51" x2="16" y2="16" transform="translate(1317.5 186.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+    <line id="Линия_52" data-name="Линия 52" x1="16" y2="16" transform="translate(1317.5 186.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+  </g>
+</svg>
+
+    <div class="content">
+        <ul class="stars"><img src="images/star.svg"><img src="images/star.svg"><img src="images/star.svg"><img src="images/star.svg"><img src="images/star.svg"><span class="date">19.12.2020</span></ul><strong class="name">Наталия</strong>
+        <p class="full">Если вы решили здесь пройти курс косметологоа, то постарайтесь не попасть к Кочетковой Анастасии Владимировне. Очень много апломба, общается с учениками как будто профессор с детсадовцами. Почему то позволяет себе обращаться ко всем на ты, хотя ученица может быть старше на 15-20 лет. Фразы типа за” каждую невыщипанную бровь будете получать подзатыльник” или “поедете к моделям делать уборку” для нее в порядке вещей, причем в присутствии моделей. Экзамен по теории почему то тоже принимается в присутствии моделей. Очень неприятный осадок от обучения на этом курсе остался, нигде такого отношения не встречала за свои деньги.</p>
+    </div>
+</section>
+<section class="teachers">
+    <div class="wrap">
+        <div class="header">
+            <h2>Наши преподаватели</h2><a class="link" href="teachers.html"><span>Все преподаватели</span><svg xmlns="http://www.w3.org/2000/svg" width="50" height="20">
+  <g id="right_arrow_red">
+    <line x1="20" y1="10" x2="49" y2="10" stroke="#e51026" stroke-linecap="round" stroke-width="1.3"/>
+    <line x1="40" y1="2" x2="49" y2="10" stroke="#e51026" stroke-linecap="round" stroke-width="1.3"/>
+    <line x1="40" y1="18" x2="49" y2="10" stroke="#e51026" stroke-linecap="round" stroke-width="1.3"/>
+  </g>
+</svg>
+</a>
+        </div>
+        <div class="carousel_wrap"><svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" class="left_arrow" viewBox="0 0 62 62">
+<g transform="translate(-30 -1109)"><g transform="translate(30 1109)" fill="#fff" stroke="rgba(0,0,0,0.1)" stroke-width="1"><circle cx="31" cy="31" r="31" stroke="none"/><circle cx="31" cy="31" r="30.5" fill="none"/></g><line x1="6.5" y2="6.5" transform="translate(57.75 1133.5)" fill="none" stroke="#252a2f" stroke-linecap="round" stroke-width="2"/><line x1="6.5" y1="6.5" transform="translate(57.75 1140)" fill="none" stroke="#252a2f" stroke-linecap="round" stroke-width="2"/>
+</g>
+</svg>
+            <div class="list carousel" target-modal="teacher">
+                <div class="card linked">
+                    <div class="preview" style="background-image: url('images/team.webp')"></div>
+                    <div class="content"><span>Специалист по массажу</span><strong>Дорохова Елена Николаевна</strong>
+                        <p>Многократный участник международных семинаров по парикмахерскому искусству…</p>
+                    </div>
+                </div>
+                <div class="card linked">
+                    <div class="preview" style="background-image: url('images/team.webp')"></div>
+                    <div class="content"><span>Специалист по массажу</span><strong>Дорохова Елена Николаевна</strong>
+                        <p>Многократный участник международных семинаров по парикмахерскому искусству…</p>
+                    </div>
+                </div>
+                <div class="card linked">
+                    <div class="preview" style="background-image: url('images/team.webp')"></div>
+                    <div class="content"><span>Специалист по массажу</span><strong>Дорохова Елена Николаевна</strong>
+                        <p>Многократный участник международных семинаров по парикмахерскому искусству…</p>
+                    </div>
+                </div>
+                <div class="card linked">
+                    <div class="preview" style="background-image: url('images/team.webp')"></div>
+                    <div class="content"><span>Специалист по массажу</span><strong>Дорохова Елена Николаевна</strong>
+                        <p>Многократный участник международных семинаров по парикмахерскому искусству…</p>
+                    </div>
+                </div>
+                <div class="card linked">
+                    <div class="preview" style="background-image: url('images/team.webp')"></div>
+                    <div class="content"><span>Специалист по массажу</span><strong>Дорохова Елена Николаевна</strong>
+                        <p>Многократный участник международных семинаров по парикмахерскому искусству…</p>
+                    </div>
+                </div>
+                <div class="card linked">
+                    <div class="preview" style="background-image: url('images/team.webp')"></div>
+                    <div class="content"><span>Специалист по массажу</span><strong>Дорохова Елена Николаевна</strong>
+                        <p>Многократный участник международных семинаров по парикмахерскому искусству…</p>
+                    </div>
+                </div>
+                <div class="card linked">
+                    <div class="preview" style="background-image: url('images/team.webp')"></div>
+                    <div class="content"><span>Специалист по массажу</span><strong>Дорохова Елена Николаевна</strong>
+                        <p>Многократный участник международных семинаров по парикмахерскому искусству…</p>
+                    </div>
+                </div>
+                <div class="card linked">
+                    <div class="preview" style="background-image: url('images/team.webp')"></div>
+                    <div class="content"><span>Специалист по массажу</span><strong>Дорохова Елена Николаевна</strong>
+                        <p>Многократный участник международных семинаров по парикмахерскому искусству…</p>
+                    </div>
+                </div>
+                <div class="card linked">
+                    <div class="preview" style="background-image: url('images/team.webp')"></div>
+                    <div class="content"><span>Специалист по массажу</span><strong>Дорохова Елена Николаевна</strong>
+                        <p>Многократный участник международных семинаров по парикмахерскому искусству…</p>
+                    </div>
+                </div>
+                <div class="card linked">
+                    <div class="preview" style="background-image: url('images/team.webp')"></div>
+                    <div class="content"><span>Специалист по массажу</span><strong>Дорохова Елена Николаевна</strong>
+                        <p>Многократный участник международных семинаров по парикмахерскому искусству…</p>
+                    </div>
+                </div>
+                <div class="card linked">
+                    <div class="preview" style="background-image: url('images/team.webp')"></div>
+                    <div class="content"><span>Специалист по массажу</span><strong>Дорохова Елена Николаевна</strong>
+                        <p>Многократный участник международных семинаров по парикмахерскому искусству…</p>
+                    </div>
+                </div>
+                <div class="card linked">
+                    <div class="preview" style="background-image: url('images/team.webp')"></div>
+                    <div class="content"><span>Специалист по массажу</span><strong>Дорохова Елена Николаевна</strong>
+                        <p>Многократный участник международных семинаров по парикмахерскому искусству…</p>
+                    </div>
+                </div>
+            </div><svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" class="right_arrow" viewBox="0 0 62 62"><g fill="#fff" stroke="rgba(0,0,0,0.1)" stroke-width="1"><circle cx="31" cy="31" r="31" stroke="none"/><circle cx="31" cy="31" r="30.5" fill="none"/></g><line x2="6.5" y2="6.5" transform="translate(27.75 24.5)" fill="none" stroke="#252a2f" stroke-linecap="round" stroke-width="2"/><line y1="6.5" x2="6.5" transform="translate(27.75 31)" fill="none" stroke="#252a2f" stroke-linecap="round" stroke-width="2"/></svg>
+        </div>
+    </div>
+</section>
+<section modal="teacher"><svg class="cross" xmlns="http://www.w3.org/2000/svg" width="18.828" height="18.828" viewBox="0 0 18.828 18.828">
+  <g id="cross" transform="translate(-1316.086 -185.086)">
+    <line id="Линия_51" data-name="Линия 51" x2="16" y2="16" transform="translate(1317.5 186.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+    <line id="Линия_52" data-name="Линия 52" x1="16" y2="16" transform="translate(1317.5 186.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+  </g>
+</svg>
+
+    <div class="content">
+        <div class="preview" style="background-image: url('images/team.webp')"></div><span>Специалист по массажу</span><strong>Дорохова Елена Николаевна</strong>
+        <p>Многократный участник международных семинаров по парикмахерскому искусству. Призер Чемпионата России по парикмахерскому искусству, маникюру и декоративной косметике -2014 год в номинации «Прогрессивный образ женщины». Член жюри внутреннего конкурса среди учащихся и выпускников УЦ «Мастерская красоты».</p>
+        <div class="merge">
+            <div><span> Опыт работы:</span><strong>8 лет</strong></div>
+            <div><span> Место работы:</span><strong>Технолог компании Matrix</strong></div>
+        </div>
+    </div>
+</section>
+<section class="faq">
+    <div class="wrap">
+        <h2>Часто задаваемые вопросы</h2>
+        <div class="list">
+            <div class="item">
+                <div class="question"><strong>Что понадобится для обучения?</strong>
+                    <div class="mark"></div>
+                </div>
+                <div class="answer"><span>Обучение подходит абсолютно всем: новичкам, практикующим мастерам и представителям бьюти-сферы. Каждый найдет для себя полезную информацию, научится новой технике точечного плетения. На курсе ты сосредоточишься как на теоретических знаниях, так и на практических.</span></div>
+            </div>
+            <div class="item">
+                <div class="question"><strong>Что делать, если непонятен материал урока?</strong>
+                    <div class="mark"></div>
+                </div>
+                <div class="answer"><span>Обучение подходит абсолютно всем: новичкам, практикующим мастерам и представителям бьюти-сферы. Каждый найдет для себя полезную информацию, научится новой технике точечного плетения. На курсе ты сосредоточишься как на теоретических знаниях, так и на практических.</span></div>
+            </div>
+            <div class="item">
+                <div class="question"><strong>Как будет проходить обучение?</strong>
+                    <div class="mark"></div>
+                </div>
+                <div class="answer"><span>Обучение подходит абсолютно всем: новичкам, практикующим мастерам и представителям бьюти-сферы. Каждый найдет для себя полезную информацию, научится новой технике точечного плетения. На курсе ты сосредоточишься как на теоретических знаниях, так и на практических.</span></div>
+            </div>
+            <div class="item">
+                <div class="question"><strong>Кому подойдет этот курс?</strong>
+                    <div class="mark"></div>
+                </div>
+                <div class="answer"><span>Обучение подходит абсолютно всем: новичкам, практикующим мастерам и представителям бьюти-сферы. Каждый найдет для себя полезную информацию, научится новой технике точечного плетения. На курсе ты сосредоточишься как на теоретических знаниях, так и на практических.</span></div>
+            </div>
+            <div class="item">
+                <div class="question"><strong>Вы выдаете сертификат?</strong>
+                    <div class="mark"></div>
+                </div>
+                <div class="answer"><span>Обучение подходит абсолютно всем: новичкам, практикующим мастерам и представителям бьюти-сферы. Каждый найдет для себя полезную информацию, научится новой технике точечного плетения. На курсе ты сосредоточишься как на теоретических знаниях, так и на практических.</span></div>
+            </div>
+            <div class="item">
+                <div class="question"><strong>Кто будет проверять домашние задания?</strong>
+                    <div class="mark"></div>
+                </div>
+                <div class="answer"><span>Обучение подходит абсолютно всем: новичкам, практикующим мастерам и представителям бьюти-сферы. Каждый найдет для себя полезную информацию, научится новой технике точечного плетения. На курсе ты сосредоточишься как на теоретических знаниях, так и на практических.</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="question">
+    <div class="wrap">
+        <div class="image"><img src="images/question.webp"></div>
+        <div class="form">
+            <h2>Остались вопросы?</h2>
+            <form action="send_mail.html">
+                <input type="hidden" name="Форма" value="Остались вопросы">
+                <div class="merge">
+                    <div class="input">
+                        <input name="Имя" type="text" placeholder=" " minlength="3" required>
+                        <label for="Имя">Введите ваше Имя</label>
+                    </div>
+                    <div class="input">
+                        <input name="Почта" type="email" placeholder=" " required>
+                        <label for="Почта">Введите ваше email</label>
+                    </div>
+                </div>
+                <div class="textarea">
+                    <textarea name="Вопрос" rows="1" placeholder=" " minlength="20" required></textarea>
+                    <label for="Вопрос">Ваш вопрос</label>
+                </div><span class="personal"><span>Нажимая на кнопку, вы даете согласие на обработку своих</span><a href="###">персональных данных</a></span>
+                <input type="submit" value="Задать вопрос">
+            </form>
+        </div>
+    </div>
+</section>
+<section class="footer">
+    <div class="wrap">
+        <div class="description">
+            <div class="logotype"><img src="images/logotype_light.svg"></div><span>Обращаем ваше внимание на то, что данный интернет-сайт носит исключительно информационный характер и не является публичной офертой. Для получения подробной информации о наличии и стоимости указанных товаров и (или) услуг, пожалуйста, обращайтесь к менеджерам отдела клиентского обслуживания с помощью специальной формы связи или по телефонам.</span>
+        </div>
+        <div class="directions"><strong>Направления:</strong>
+            <ul>
+                <li><a href="category.html">Парикмахерское исскуство</a></li>
+                <li><a href="category.html">Маникюр</a></li>
+                <li><a href="category.html">Педикюр</a></li>
+                <li><a href="category.html">Косметология</a></li>
+                <li><a href="category.html">Массажист</a></li>
+                <li><a href="category.html">Визажист</a></li>
+                <li><a href="category.html">Стилист</a></li>
+                <li><a href="category.html">Ресницы</a></li>
+                <li><a href="category.html">Брови</a></li>
+                <li><a href="category.html">Татуаж</a></li>
+                <li><a href="https://mskr-online.ru" target="_blanc">Онлайн обучение</a></li>
+            </ul>
+        </div>
+        <div class="about"><strong>Академия:</strong>
+            <ul>
+                <li><a href="text.html">Об академии</a></li>
+                <li><a href="teachers.html">Преподователи</a></li>
+                <li><a href="text.html">Льготное обучение</a></li>
+                <li><a href="text.html">Аттестация</a></li>
+                <li><a href="reviews.html">Отзывы</a></li>
+                <li><a href="articles.html">Новости</a></li>
+                <li><a href="articles.html">Статьи</a></li>
+                <li><a href="jobs.html">Биржа труда</a></li>
+                <li><a href="https://shop-mskr.ru">Интернет магазин</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="copyright"><span>© 2013-2021 Мастерская красоты.</span><span>Все права защищены.</span></div>
+        <div class="phones"><a href="tel:8 (928) 226-43-29">8 (928) 226-43-29</a><a href="tel:8 (928) 226-43-45">8 (928) 226-43-45</a></div>
+        <div class="adress"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="26.148" viewBox="0 0 22 26.148">
+  <g id="pin" transform="translate(-4.997 -2.927)">
+    <path id="Контур_8" data-name="Контур 8" d="M23.775,6.15A11,11,0,1,0,8.219,21.71l4.1,4.1a1,1,0,1,0,1.42-1.42l-4.1-4.1a9,9,0,1,1,12.716,0l-7.068,7.07a1,1,0,1,0,1.42,1.42l7.068-7.07a11,11,0,0,0,0-15.56Z" fill="#e51026"/>
+    <path id="Контур_9" data-name="Контур 9" d="M21,14a5,5,0,1,0-5,5,5,5,0,0,0,5-5Zm-8,0a3,3,0,1,1,3,3,3,3,0,0,1-3-3Z" transform="translate(-0.003)" fill="#e51026"/>
+  </g>
+</svg>
+<span>г. Ростов-на-Дону,<br>ул. Пушкинская, 25/67</span>
+        </div>
+    </div>
+</section>
+<section modal="menu"><svg class="cross" xmlns="http://www.w3.org/2000/svg" width="18.828" height="18.828" viewBox="0 0 18.828 18.828">
+  <g id="cross" transform="translate(-1316.086 -185.086)">
+    <line id="Линия_51" data-name="Линия 51" x2="16" y2="16" transform="translate(1317.5 186.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+    <line id="Линия_52" data-name="Линия 52" x1="16" y2="16" transform="translate(1317.5 186.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+  </g>
+</svg>
+
+    <div class="content">
+        <ul>
+            <li class="active"><a href="index.html">Главная</a></li>
+            <li class="has-child"><a>Направления</a>
+                <ul>
+                    <li><a href="category.html">Парикмахерское исскуство</a></li>
+                    <li><a href="category.html">Маникюр</a></li>
+                    <li><a href="category.html">Педикюр</a></li>
+                    <li><a href="category.html">Косметология</a></li>
+                    <li><a href="category.html">Массажист</a></li>
+                    <li><a href="category.html">Визажист</a></li>
+                    <li><a href="category.html">Стилист</a></li>
+                    <li><a href="category.html">Ресницы</a></li>
+                    <li><a href="category.html">Брови</a></li>
+                    <li><a href="category.html">Татуаж</a></li>
+                </ul>
+            </li>
+            <li class="has-child"><a>Академия</a>
+                <ul>
+                    <li><a href="text.html">Об академии</a></li>
+                    <li><a href="teachers.html">Преподователи</a></li>
+                    <li><a href="text.html">Льготное обучение</a></li>
+                    <li><a href="text.html">Аттестация</a></li>
+                    <li><a href="reviews.html">Отзывы</a></li>
+                    <li><a href="articles.html">Новости</a></li>
+                    <li><a href="articles.html">Статьи</a></li>
+                    <li><a href="jobs.html">Биржа труда</a></li>
+                    <li><a href="https://shop-mskr.ru">Интернет магазин</a></li>
+                </ul>
+            </li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li class="online"><a href="https://mskr-online.ru"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="20" viewBox="0 0 26 20">
+  <g id="online" transform="translate(-1275.319 -172.79)">
+    <circle id="Эллипс_5" data-name="Эллипс 5" cx="3" cy="3" r="3" transform="translate(1285 179)" fill="#e51026"/>
+    <path id="Контур_10" data-name="Контур 10" d="M-.262-.115A7.959,7.959,0,0,1,1.325,4.476,7.968,7.968,0,0,1-.262,9.069" transform="translate(1293.5 177.5)" fill="none" stroke="#e51026" stroke-linecap="round" stroke-width="1.5"/>
+    <path id="Контур_11" data-name="Контур 11" d="M-.262-.115A13.021,13.021,0,0,1,3.072,8.022,12.713,12.713,0,0,1-.262,16.087" transform="translate(1296.859 173.966)" fill="none" stroke="#e51026" stroke-linecap="round" stroke-width="1.5"/>
+    <path id="Контур_12" data-name="Контур 12" d="M1.325-.115A7.959,7.959,0,0,0-.262,4.476,7.968,7.968,0,0,0,1.325,9.069" transform="translate(1281.437 177.5)" fill="none" stroke="#e51026" stroke-linecap="round" stroke-width="1.5"/>
+    <path id="Контур_13" data-name="Контур 13" d="M3.072-.115A13.021,13.021,0,0,0-.262,8.022a12.713,12.713,0,0,0,3.334,8.064" transform="translate(1276.331 173.966)" fill="none" stroke="#e51026" stroke-linecap="round" stroke-width="1.5"/>
+  </g>
+</svg>
+<span>Онлайн обучение</span></a></li>
+        </ul>
+        <div class="adress"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="26.148" viewBox="0 0 22 26.148">
+  <g id="pin" transform="translate(-4.997 -2.927)">
+    <path id="Контур_8" data-name="Контур 8" d="M23.775,6.15A11,11,0,1,0,8.219,21.71l4.1,4.1a1,1,0,1,0,1.42-1.42l-4.1-4.1a9,9,0,1,1,12.716,0l-7.068,7.07a1,1,0,1,0,1.42,1.42l7.068-7.07a11,11,0,0,0,0-15.56Z" fill="#e51026"/>
+    <path id="Контур_9" data-name="Контур 9" d="M21,14a5,5,0,1,0-5,5,5,5,0,0,0,5-5Zm-8,0a3,3,0,1,1,3,3,3,3,0,0,1-3-3Z" transform="translate(-0.003)" fill="#e51026"/>
+  </g>
+</svg>
+<span>г. Ростов-на-Дону,<br>ул. Пушкинская, 25/67</span>
+        </div>
+        <div class="phones"><a href="tel:8 (928) 226-43-29">8 (928) 226-43-29</a><a href="tel:8 (928) 226-43-45">8 (928) 226-43-45</a></div>
+    </div>
+</section>
+<div modal="confirm"><svg class="cross" xmlns="http://www.w3.org/2000/svg" width="18.828" height="18.828" viewBox="0 0 18.828 18.828">
+  <g id="cross" transform="translate(-1316.086 -185.086)">
+    <line id="Линия_51" data-name="Линия 51" x2="16" y2="16" transform="translate(1317.5 186.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+    <line id="Линия_52" data-name="Линия 52" x1="16" y2="16" transform="translate(1317.5 186.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+  </g>
+</svg>
+
+    <div class="content">
+        <h1>Успешно!</h1>
+        <p>Ваше сообщение успешно отправлено</p><br><a class="button" href="index.html">Перейти на главную</a>
+    </div>
+</div>
+<section modal="video">
+    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/TDGjipWL7MQ" title="Мастерская красоты" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>

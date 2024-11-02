@@ -1,0 +1,22 @@
+section.teachers
+    div.wrap
+        div.header
+            h2 Наши преподаватели
+            a(href="teachers.html").link
+                span Все преподаватели
+                include ../../images/right_arrow.svg
+
+        div(class="carousel_wrap")
+            include ../../images/gallery_left.svg
+            div(target-modal="teacher").list.carousel
+                -for( i=1; i<=12 ; i++ )
+                    div.card.linked
+                        div(style="background-image: url('images/team.webp')").preview
+                        div.content
+                            span Специалист по массажу
+                            strong Дорохова Елена Николаевна
+                            p Многократный участник международных семинаров по парикмахерскому искусству…
+
+            include ../../images/gallery_right.svg
+
+include _popup_teacher.pug

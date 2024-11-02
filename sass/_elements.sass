@@ -1,0 +1,172 @@
+@import 'variables'
+
+h1
+    font-family: 'El Messiri', sans-serif
+    font-size: 3.75rem
+    line-height: 1.2
+
+h2
+    font-family: 'El Messiri', sans-serif
+    font-size: 2.25rem
+    line-height: 1.4
+
+h3
+    font-family: 'El Messiri', sans-serif
+    font-size: 1.85rem
+    line-height: 1.5
+
+i
+    font-family: 'El Messiri', sans-serif
+    font-style: normal
+    opacity: .5
+
+strong
+    display: block
+    font-size: 1.4rem
+    line-height: 1.5
+    font-family: 'El Messiri', sans-serif
+
+a
+    color: inherit
+    text-decoration: none
+
+input, textarea
+    -webkit-appearance: none
+    font-size: inherit
+    font-weight: inherit
+    line-height: 1.8
+    border-radius: 0
+
+textarea
+    resize: vertical
+
+input[type=submit]
+    cursor: pointer
+    display: block
+    color: white
+    background-color: $dark
+    border: none!important
+    padding: .8rem 3rem
+    transition: background-color .2s
+    &:hover
+        background-color: $accent
+
+.input, .textarea
+    position: relative
+    width: 100%
+    margin-top: var(--three-padding)
+    border-bottom: 1px solid $dark
+    min-height: 34px
+    input, textarea
+        position: relative
+        width: 100%
+        min-height: 100%!important
+        max-width: 100%
+        border: none
+        color: $dark
+        background-color: transparent
+        outline: none
+        z-index: 1
+        &:not(:placeholder-shown) + label, &:focus + label
+            top: -1.4rem
+            font-size: 0.9rem
+            opacity: .5
+    label
+        transition: all .2s
+        position: absolute
+        top: 0
+        left: 0
+        color: $dark
+        opacity: .5
+
+.phones
+    font-family: 'El Messiri', sans-serif
+    font-size: 1.125rem
+    white-space: nowrap
+
+.adress
+    display: flex
+    align-items: center
+    svg
+        margin-right: var(--one-padding)
+
+.stars
+    display: flex
+    align-items: center
+    img
+        margin-right: .3em
+    span
+        opacity: .7
+        padding-left: var(--one-padding)
+
+.cross
+    cursor: pointer
+
+.developed
+    display: flex
+    align-items: center
+    order: 999
+    p
+        font-size: .9rem
+        opacity: .4
+        padding-right: 1rem
+    img
+        opacity: .5
+        transition: opacity .2s
+        width: 80px
+    &:hover
+        img
+            opacity: 1
+
+.button
+    cursor: pointer
+    font-family: 'El Messiri', sans-serif
+    font-size: 1.2rem
+    display: inline-block
+    background-color: $background
+    padding: .7rem 3rem
+    color: white
+    transition: all .2s
+    transition-property: background-color, color
+    &:hover
+        background-color: $accent
+    &.empty
+        background-color: transparent
+        border: 1px solid $accent
+        color: $dark
+        &:hover
+            background-color: $accent
+            color: white
+
+.card
+    box-shadow: 0px 15px 40px rgba(22, 57, 88, .05)
+    &.linked
+        transition: all .3s
+        transition-property: box-shadow, transform
+        &:hover
+            transform: scale(1.02)
+            box-shadow: 0px 15px 60px rgba(22, 57, 88, .2)
+            z-index: 1
+
+
+form
+    ul.stars
+        display: flex
+        flex-direction: row-reverse
+        justify-content: flex-end
+    input.star
+        display: none
+    label.star
+        padding: .2rem
+
+    input.star:checked ~ label.star
+        svg
+            path
+                fill: $accent
+    label.star
+        cursor: pointer
+        svg
+            path
+                transition: all .2s
+                fill: rgba(0,0,0,0.15)
+            

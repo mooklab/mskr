@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="23.278" height="23.278" viewBox="0 0 23.278 23.278">
+  <g id="day" transform="translate(-1176.9 -1853.822)">
+    <g id="Эллипс_7" data-name="Эллипс 7" transform="translate(1183 1860)" fill="none" stroke="#e51026" stroke-width="1.2">
+      <circle cx="5.5" cy="5.5" r="5.5" stroke="none"/>
+      <circle cx="5.5" cy="5.5" r="4.9" fill="none"/>
+    </g>
+    <line id="Линия_33" data-name="Линия 33" y2="3.066" transform="translate(1188.539 1854.422)" fill="none" stroke="#e51026" stroke-linecap="round" stroke-width="1.2"/>
+    <line id="Линия_34" data-name="Линия 34" y2="3.066" transform="translate(1188.539 1873.434)" fill="none" stroke="#e51026" stroke-linecap="round" stroke-width="1.2"/>
+    <line id="Линия_35" data-name="Линия 35" y2="3.066" transform="translate(1199.578 1865.461) rotate(90)" fill="none" stroke="#e51026" stroke-linecap="round" stroke-width="1.2"/>
+    <line id="Линия_36" data-name="Линия 36" y2="3.066" transform="translate(1180.566 1865.461) rotate(90)" fill="none" stroke="#e51026" stroke-linecap="round" stroke-width="1.2"/>
+    <line id="Линия_37" data-name="Линия 37" y2="3.066" transform="translate(1196.345 1873.267) rotate(135)" fill="none" stroke="#e51026" stroke-linecap="round" stroke-width="1.2"/>
+    <line id="Линия_38" data-name="Линия 38" y2="3.066" transform="translate(1182.901 1859.824) rotate(135)" fill="none" stroke="#e51026" stroke-linecap="round" stroke-width="1.2"/>
+    <line id="Линия_39" data-name="Линия 39" y2="3.066" transform="translate(1180.733 1873.267) rotate(-135)" fill="none" stroke="#e51026" stroke-linecap="round" stroke-width="1.2"/>
+    <line id="Линия_40" data-name="Линия 40" y2="3.066" transform="translate(1194.176 1859.824) rotate(-135)" fill="none" stroke="#e51026" stroke-linecap="round" stroke-width="1.2"/>
+  </g>
+</svg>

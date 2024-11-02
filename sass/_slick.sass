@@ -1,0 +1,52 @@
+
+.slick-list
+    position: relative
+    overflow: visible!important
+    width: calc( 100% + var(--two-padding) )
+    left: calc( var(--two-padding) / -2 )
+
+.slick-slide
+    margin: 0 1rem
+    transition: opacity .3s
+    cursor: pointer
+
+.slick-slide[aria-hidden=true]
+    opacity: 0
+
+.carousel_wrap
+    position: relative
+    .left_arrow, .right_arrow
+        position: absolute
+        top: 50%
+        width: 50px
+        margin-top: -25px
+        z-index: 1
+        cursor: pointer
+        circle
+            fill: white
+            transition: all .2s
+        line
+            stroke: $dark
+            transition: all .2s
+        &:hover
+            circle
+                fill: $dark
+            line
+                stroke: $light
+        &.slick-disabled
+            opacity: 0
+    .left_arrow
+        left: -25px
+    .right_arrow
+        right: -25px
+
+
+@media (max-width: 640px)
+    .carousel_wrap
+        .left_arrow, .right_arrow
+            width: 40px
+            margin-top: -20px
+        .left_arrow
+            left: -20px
+        .right_arrow
+            right: -20px
